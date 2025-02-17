@@ -1,0 +1,18 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Outfit:wght@100..900&display=swap');
+
+@theme {
+    --font-dmsans: "DM Sans", serif;
+    --font-outfit: "Outfit", serif;
+    --color-darkbluegreen: #066682;
+    --color-lightgray: #F8F8F8;
+    --color-midgray: #E5E5E5;
+    --color-lightdark: #171717;
+    --color-lightyellow: #FFEA00;
+    --color-darkgray: #262E36;
+    --color-darkblue: #196EB2;
+}
+
+.common-btn {
+    @apply bg-darkbluegreen px-5 py-2 rounded-lg text-white
+}
