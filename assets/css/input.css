@@ -14,5 +14,40 @@
 }
 
 .common-btn {
-    @apply bg-darkbluegreen px-5 py-2 rounded-lg text-white
+    @apply bg-darkbluegreen px-5 py-3 rounded-[10px] text-white
+}
+
+.hero {
+    background: url(../images/hero-bg.png) no-repeat center/cover;
+}
+
+header.active {
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(15, 15, 15, 0.219);
+    border: 1px solid rgba(209, 213, 219, 0.104);
+}
+
+
+.common-heading {
+    @apply text-sm relative py-5
+}
+
+.common-heading::after {
+    content: "";
+    height: 1px;
+    width: 120px;
+    background-color: #0478D6;
+    display: inline-block;
+    margin: 0 0 5px 5px;
+}
+
+.huccleberry {
+    background: url(../images/can.png) no-repeat center/cover;
+    min-height: 400px;
+    width: 100%;
+}
+
+.about-us__middle ul li {
+    list-style-image: url(../images/Frame.png);
 }

@@ -5,18 +5,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Real Estate</title>
+
+    <!-- GOOGLE FONT LINK -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Outfit:wght@100..900&display=swap"
+        rel="stylesheet">
+
     <!-- REMIX ICON CDN LINK -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+
     <!-- CSS LINK -->
     <link rel="stylesheet" href="./assets/css/output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 
 <body class="font-outfit">
-    <header class="bg-slate-100">
-        <div class="container mx-auto flex justify-between items-center p-5">
-            <a href="index.html">LOGO</a>
+    <!-- HEADER -->
+    <header class="fixed top-0 w-full z-50" id="header">
+        <div class="container mx-auto flex justify-between items-center p-2">
+            <a href="index.html"><img src="./assets/images/logo-veidheek.png" alt="logo-img" width="227"
+                    height="70"></a>
             <nav class="nav flex items-center gap-5 xl:text-lg lg:text-[16px]">
-                <ul class="nav__list flex items-center gap-5 uppercase">
+                <ul class="nav__list flex items-center gap-5 uppercase text-white font-light me-5">
                     <li class="nav__list--link"><a href="#">About us</a></li>
                     <li class="nav__list--link"><a href="#">Projects</a></li>
                     <li class="nav__list--link"><a href="#">Businesses</a></li>
@@ -24,17 +36,138 @@
                     <li class="nav__list--link"><a href="#">Blogs</a></li>
                     <li class="nav__list--link"><a href="#">Contact Us</a></li>
                 </ul>
-                <a href="#" class="call-btn common-btn"><i class="ri-phone-fill"></i>789456123</a>
-                <button type="button" class="nav__btn lg:hidden cursor-pointer"><i class="ri-menu-fold-line"></i></button>
+                <a href="#" class="call-btn common-btn"><i class="ri-phone-fill"></i>91 12345 98696</a>
+                <button type="button" class="nav__btn lg:hidden cursor-pointer"><i
+                        class="ri-menu-fold-line"></i></button>
             </nav>
         </div>
     </header>
+    <!-- HEADER -->
     <main>
+        <section class="hero min-h-screen w-full flex flex-col gap-[150px] justify-end items-center">
+            <div class="hero__content w-[60%] text-center mx-auto text-white">
+                <h1 class="text-5xl font-semibold mb-5">Vaidheeki means <span class="text-[#12C9FF]">quality
+                        offerings.</span></h1>
+                <p class="font-dmsans text-lg font-light">Login offers manufacturers and logisticians Of all sizes
+                    tailor-made support to analyze. recommend
+                    and transform their logistics organization.
+                </p>
+            </div>
+            <div class="hero__filter-form bg-white p-2 mb-5 rounded-[100px]">
+                <form action="#" class="flex  items-center ms-5">
+                    <div class="form-grp border-e border-[#D9D9D9] px-5">
+                        <label for="location" class="px-1 py-2">Location</label>
+                        <select name="" id="" class="block border-0 focus:outline-0 text-[#6D6D6D] text-[16px]">
+                            <option value="">Select Property Location</option>
+                            <option value="">2</option>
+                            <option value="">3</option>
+                        </select>
+                    </div>
+                    <div class="form-grp border-e border-[#D9D9D9] px-5">
+                        <label for="type" class="px-1 py-2">Type</label>
+                        <select name="" id="" class="block border-0 focus:outline-0 text-[#6D6D6D] text-[16px]">
+                            <option value="">Select Property Type</option>
+                            <option value="">2</option>
+                            <option value="">3</option>
+                        </select>
+                    </div>
+                    <div class="form-grp px-5">
+                        <label for="property" class="px-1 py-2">Status</label>
+                        <select name="" id="" class="block border-0 focus:outline-0 text-[#6D6D6D] text-[16px]">
+                            <option value="">Select Property Status</option>
+                            <option value="">2</option>
+                            <option value="">3</option>
+                        </select>
+                    </div>
+                    <button type="submit"
+                        class="bg-darkbluegreen rounded-[100px] px-15 py-5 text-white h-full">Search</button>
+                </form>
+            </div>
 
+        </section>
+        <section class="project min-h-screen w-full">
+            <div class="container mx-auto px-5 py-10 grid grid-cols-[500px_2fr]">
+                <div class="project__left">
+                    <h2 class="common-heading">
+                        PROJECTS
+                    </h2>
+                    <h3 class="xl:text-5xl lg:text-4xl font-semibold mb-5">
+                        Featured Properties
+                    </h3>
+                    <p class="text-[#6D6D6D]">
+                        Vaidheeki is an Indian property group with a clearly defined purpose to reimagine urban life. By
+                        creating beautiful homes, inspiring workplace precincts and thriving shopping centers, we aim to
+                        make a positive contribution to our cities and communities.
+                    </p>
+                </div>
+                <div class="project__right">
+
+                </div>
+            </div>
+        </section>
+        <section class="about-us ">
+            <div class="container mx-auto px-5 py-10 grid grid-cols-3 gap-15">
+                <div class="about-us__left pe-5">
+                    <h2 class="common-heading">
+                        ABOUT US
+                    </h2>
+                    <h3 class="xl:text-5xl lg:text-4xl font-semibold mb-5">
+                        Why Choose Vaidheeki REAL ESTATE ?
+                    </h3>
+                    <p class="text-[#6D6D6D] mb-5">
+                        Vaidheeki is an Indian property group with a clearly defined purpose to reimagine urban life. By
+                        creating beautiful homes, inspiring workplace precincts and thriving shopping centers, we aim to
+                        make a positive contribution to our cities and communities.
+                    </p>
+                    <a href="#" class="common-btn inline-block">Read More</a>
+                </div>
+                <div class="about-us__middle px-5 mt-5">
+                    <div class="mission">
+                        <h2 class="text-lightdark font-bold text-[20px] mb-2">OUR MISSION</h2>
+                        <p class="text-[#6D6D6D] mb-5">Our mission is to redefine real estate excellence by delivering
+                            unparalleled value, trust,
+                            and
+                            innovation. We strive to create spaces that inspire, foster community, and enhance
+                            lifestyles,
+                            while maintaining a steadfast commitment to sustainability and ethical practices.</p>
+                    </div>
+                    <div class="vision">
+                        <h2 class="text-lightdark font-bold text-[20px] mb-2">OUR MISSION</h2>
+                        <p class="text-[#6D6D6D] mb-5">At Vaidheeki, our mission is to shape a better future in real
+                            estate by providing exceptional services and creating value-driven experiences. We are
+                            committed to:</p>
+                    </div>
+                    <ul class="text-[#6D6D6D] mb-5">
+                        <li>Offering top-notch services that exceed expectations in every project and transaction.</li>
+                        <li>Designing spaces that foster connection, well-being, and a sense of belonging.</li>
+                    </ul>
+                </div>
+                <div class="about-us__right ps-5 mt-5 relative">
+                    <img src="./assets/images/about.png" alt="about-image" class="w-full h-full object-cover">
+                    <div
+                        class="exp-years text-center bg-black p-5 w-[150px] aspect-square text-white absolute bottom-5 border border-white border-6 -left-[50px]">
+                        <h3 class="text-5xl font-semibold">14+</h3>
+                        <p class="text-sm">Trust, Excellence, and Innovation in Real Estate</p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section class="huccleberry text-shweater p-10">
+            <h2 class="uppercase digital-pr-hind text-white">Explore Our Digital Presence</h2>
+            <p>Pure, Natural, and Nutrient-Rich: Experience Huckleberry Goodness!</p>
+            <div class="flex">
+                <a href="#" class="common-btn">Explore More</a>
+                <a href="#" class="Visit Website common-btn bg-white">Visit Website</a>
+            </div>
+        </section>
     </main>
     <footer>
 
     </footer>
+
+    <!-- SCRIPT -->
+    <script src="./assets/js/main.js"></script>
 </body>
 
 </html>
