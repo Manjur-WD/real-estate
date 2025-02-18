@@ -4,6 +4,7 @@
 @theme {
     --font-dmsans: "DM Sans", serif;
     --font-outfit: "Outfit", serif;
+    --font-mont: "Montserrat", serif;
     --color-darkbluegreen: #066682;
     --color-lightgray: #F8F8F8;
     --color-midgray: #E5E5E5;
@@ -14,7 +15,7 @@
 }
 
 .common-btn {
-    @apply bg-darkbluegreen px-5 py-3 rounded-[10px] text-white
+    @apply px-8 py-3 rounded-[10px]
 }
 
 .hero {
@@ -29,7 +30,8 @@ header.active {
 }
 
 
-.common-heading {
+.common-heading,
+.banner-title {
     @apply text-sm relative py-5
 }
 
@@ -41,13 +43,31 @@ header.active {
     display: inline-block;
     margin: 0 0 5px 5px;
 }
+.banner-title::after {
+    content: "";
+    height: 1px;
+    width: 120px;
+    background-color: #ffffff;
+    display: inline-block;
+    margin: 0 0 5px 5px;
+}
 
 .huccleberry {
     background: url(../images/can.png) no-repeat center/cover;
+    background-attachment: fixed;
     min-height: 400px;
     width: 100%;
 }
 
 .about-us__middle ul li {
     list-style-image: url(../images/Frame.png);
+}
+
+.inverted-text{
+    color: black;
+  -webkit-text-fill-color: transparent; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+  transform: translateX(40%) rotate(-90deg);
+  right: 0;
 }
