@@ -58,6 +58,13 @@ header.active {
     min-height: 400px;
     width: 100%;
 }
+.rock-garden {
+    background: url(../images/rock-garden.png) no-repeat center/cover;
+    background-attachment: fixed;
+    min-height: 400px;
+    width: 100%;
+}
+
 
 .about-us__middle ul li {
     list-style-image: url(../images/Frame.png);
@@ -70,4 +77,12 @@ header.active {
   -webkit-text-stroke-color: white;
   transform: translateX(40%) rotate(-90deg);
   right: 0;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    display: none !important; /* Hides the default navigation arrows */
+}
+.numbers{
+    background: url(../images/number\ bg.png) no-repeat center/cover;
 }
