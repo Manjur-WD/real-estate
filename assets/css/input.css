@@ -5,6 +5,7 @@
     --font-dmsans: "DM Sans", serif;
     --font-outfit: "Outfit", serif;
     --font-mont: "Montserrat", serif;
+    --font-poppins: "Poppins", serif;
     --color-darkbluegreen: #066682;
     --color-lightgray: #F8F8F8;
     --color-midgray: #E5E5E5;
@@ -43,6 +44,7 @@ header.active {
     display: inline-block;
     margin: 0 0 5px 5px;
 }
+
 .banner-title::after {
     content: "";
     height: 1px;
@@ -58,6 +60,7 @@ header.active {
     min-height: 400px;
     width: 100%;
 }
+
 .rock-garden {
     background: url(../images/rock-garden.png) no-repeat center/cover;
     background-attachment: fixed;
@@ -70,19 +73,34 @@ header.active {
     list-style-image: url(../images/Frame.png);
 }
 
-.inverted-text{
+.inverted-text {
     color: black;
-  -webkit-text-fill-color: transparent; /* Will override color (regardless of order) */
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: white;
-  transform: translateX(40%) rotate(-90deg);
-  right: 0;
+    -webkit-text-fill-color: transparent;
+    /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
+    transform: translateX(40%) rotate(-90deg);
+    right: 0;
 }
 
 .swiper-button-next,
 .swiper-button-prev {
-    display: none !important; /* Hides the default navigation arrows */
+    display: none !important;
+    /* Hides the default navigation arrows */
 }
-.numbers{
+
+.numbers {
     background: url(../images/number\ bg.png) no-repeat center/cover;
+}
+
+.gradient-divider {
+    height: 3px;
+    width: 100%;
+    background: linear-gradient(to right, #066682, white);
+    border-radius: 20px;
+}
+
+.testimonials{
+    min-height: 100vh;
+    background: linear-gradient(#003A4B 0% , #003A4B 60%, white 40%, white 100%);
 }
