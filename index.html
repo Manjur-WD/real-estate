@@ -28,10 +28,9 @@
     <!-- HEADER -->
     <header class="fixed top-0 w-full z-50" id="header">
         <div class="container mx-auto flex justify-between items-center p-2">
-            <a href="index.html"><img src="./assets/images/logo-veidheek.png" alt="logo-img" width="227"
-                    height="70"></a>
+            <a href="index.html"><img src="./assets/images/logo-veidheek.png" alt="logo-img" class="lg:w-[227px] w-[150px]"></a>
             <nav class="nav flex items-center gap-5 xl:text-lg lg:text-[16px]">
-                <ul class="nav__list flex items-center gap-5 uppercase text-white font-light me-5">
+                <ul class="nav__list flex lg:flex-row flex-col items-center gap-5 uppercase text-white font-light me-5">
                     <li class="nav__list--link"><a href="#">About us</a></li>
                     <li class="nav__list--link"><a href="#">Projects</a></li>
                     <li class="nav__list--link"><a href="#">Businesses</a></li>
@@ -39,9 +38,9 @@
                     <li class="nav__list--link"><a href="#">Blogs</a></li>
                     <li class="nav__list--link"><a href="#">Contact Us</a></li>
                 </ul>
-                <a href="#" class="call-btn common-btn bg-darkblue text-white"><i class="ri-phone-fill"></i>91 12345
-                    98696</a>
-                <button type="button" class="nav__btn lg:hidden cursor-pointer"><i
+                <a href="#" class="call-btn common-btn bg-darkblue text-white md:text-lg text-sm"><i class="ri-phone-fill"></i>91 12345
+                    986</a>
+                <button type="button" class="nav__btn lg:hidden cursor-pointer border text-white border-dashed border-gray-300 shadow-white px-3 py-1 rounded-lg"><i
                         class="ri-menu-fold-line"></i></button>
             </nav>
         </div>
@@ -120,36 +119,8 @@
                 <div class="swiper project__right project-slider w-full py-5">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                            <div class="project-slide bg-[#F5F5F5] grid grid-cols-2 items-center">
-                                <img src="./assets/images/property image.png" alt="property-image" class="h-[105%]">
-                                <div class="p-5">
-                                    <p class="text-darkbluegreen mb-2">01.</p>
-                                    <h2 class="text-4xl font-semibold mb-2">Business Bay</h2>
-                                    <p class="text-[#6D6D6D] mb-2"><i
-                                            class="ri-map-pin-2-fill me-2 text-[#EC232D]"></i>New Town
-                                        Akhanksha Crossing</p>
-                                    <div class="gradient-divider my-3"></div>
-                                    <p class="text-[#6D6D6D] mb-2">Vaidheeki is an Indian property group with a clearly
-                                        defined
-                                        purpose to reimagine urban life. By creating beautiful homes, inspiring
-                                        workplace
-                                        precincts and thriving shopping centers, we aim to make a positive contribution
-                                        to our
-                                        cities and communities.</p>
-                                    <div class="flex lg:flex-row flex-col items-center gap-3 mt-5">
-                                        <a href="#" class="common-btn bg-darkbluegreen text-white  text-sm">Explore
-                                            More</a>
-                                        <a href="#"
-                                            class="Visit Website common-btn bg-white  text-darkbluegreen text-sm border border-slate-400"><i
-                                                class="ri-phone-fill"></i>91 12345
-                                            98696</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="project-slide bg-[#F5F5F5] grid grid-cols-2 items-center">
-                                <img src="./assets/images/property image.png" alt="property-image" class="h-[105%]">
+                            <div class="project-slide bg-[#F5F5F5] grid md:grid-cols-2 grid-cols-1 items-center">
+                                <img src="./assets/images/property image.png" alt="property-image" class="md:h-[105%] h-[250px] object-cover w-full">
                                 <div class="p-5">
                                     <p class="text-darkbluegreen mb-2">02.</p>
                                     <h2 class="text-4xl font-semibold mb-2">Business Bay</h2>
@@ -164,7 +135,7 @@
                                         precincts and thriving shopping centers, we aim to make a positive contribution
                                         to our
                                         cities and communities.</p>
-                                    <div class="flex lg:flex-row flex-col items-center gap-3 mt-5">
+                                    <div class="flex items-center gap-3 mt-5">
                                         <a href="#" class="common-btn bg-darkbluegreen text-white  text-sm">Explore
                                             More</a>
                                         <a href="#"
@@ -176,10 +147,10 @@
                             </div>
                         </div>
                         <div class="swiper-slide">
-                            <div class="project-slide bg-[#F5F5F5] grid grid-cols-2 items-center">
-                                <img src="./assets/images/property image.png" alt="property-image" class="h-[105%]">
+                            <div class="project-slide bg-[#F5F5F5] grid md:grid-cols-2 grid-cols-1 items-center">
+                                <img src="./assets/images/property image.png" alt="property-image" class="md:h-[105%] h-[250px] object-cover w-full">
                                 <div class="p-5">
-                                    <p class="text-darkbluegreen mb-2">03.</p>
+                                    <p class="text-darkbluegreen mb-2">02.</p>
                                     <h2 class="text-4xl font-semibold mb-2">Business Bay</h2>
                                     <p class="text-[#6D6D6D] mb-2"><i
                                             class="ri-map-pin-2-fill me-2 text-[#EC232D]"></i>New Town
@@ -192,7 +163,35 @@
                                         precincts and thriving shopping centers, we aim to make a positive contribution
                                         to our
                                         cities and communities.</p>
-                                    <div class="flex lg:flex-row flex-col items-center gap-3 mt-5">
+                                    <div class="flex items-center gap-3 mt-5">
+                                        <a href="#" class="common-btn bg-darkbluegreen text-white  text-sm">Explore
+                                            More</a>
+                                        <a href="#"
+                                            class="Visit Website common-btn bg-white  text-darkbluegreen text-sm border border-slate-400"><i
+                                                class="ri-phone-fill"></i>91 12345
+                                            98696</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="project-slide bg-[#F5F5F5] grid md:grid-cols-2 grid-cols-1 items-center">
+                                <img src="./assets/images/property image.png" alt="property-image" class="md:h-[105%] h-[250px] object-cover w-full">
+                                <div class="p-5">
+                                    <p class="text-darkbluegreen mb-2">02.</p>
+                                    <h2 class="text-4xl font-semibold mb-2">Business Bay</h2>
+                                    <p class="text-[#6D6D6D] mb-2"><i
+                                            class="ri-map-pin-2-fill me-2 text-[#EC232D]"></i>New Town
+                                        Akhanksha Crossing</p>
+                                    <div class="gradient-divider my-3"></div>
+                                    <p class="text-[#6D6D6D] mb-2">Vaidheeki is an Indian property group with a clearly
+                                        defined
+                                        purpose to reimagine urban life. By creating beautiful homes, inspiring
+                                        workplace
+                                        precincts and thriving shopping centers, we aim to make a positive contribution
+                                        to our
+                                        cities and communities.</p>
+                                    <div class="flex items-center gap-3 mt-5">
                                         <a href="#" class="common-btn bg-darkbluegreen text-white  text-sm">Explore
                                             More</a>
                                         <a href="#"
@@ -415,7 +414,7 @@
                     </div>
                     <div class="blog-list p-5">
                         <ul class="list-none border p-3 border-[#E3E3E3] rounded-lg">
-                            <li class="flex items-start gap-3 border-b pb-5 border-[#E3E3E3]">
+                            <li class="flex items-start gap-3 border-b mb-2 pb-3 border-[#E3E3E3]">
                                 <img src="./assets/images/blog-lis-image.png" alt="blog-list-image"
                                     class="w-[100px] aspect-square object-cover">
                                 <div class="blog-list-content">
@@ -426,7 +425,7 @@
                                             class="ri-arrow-right-double-line"></i></a>
                                 </div>
                             </li>
-                            <li class="flex items-start gap-3 border-b pb-5 border-[#E3E3E3]">
+                            <li class="flex items-start gap-3 border-b mb-2 pb-3 border-[#E3E3E3]">
                                 <img src="./assets/images/blog-lis-image.png" alt="blog-list-image"
                                     class="w-[100px] aspect-square object-cover">
                                 <div class="blog-list-content">
@@ -438,7 +437,7 @@
                                             class="ri-arrow-right-double-line"></i></a>
                                 </div>
                             </li>
-                            <li class="flex items-start gap-3 border-b pb-5 border-[#E3E3E3]">
+                            <li class="flex items-start gap-3 border-b mb-2 pb-3 border-[#E3E3E3]">
                                 <img src="./assets/images/blog-lis-image.png" alt="blog-list-image"
                                     class="w-[100px] aspect-square object-cover">
                                 <div class="blog-list-content">
@@ -691,8 +690,8 @@
                 </div>
             </div>
         </section>
-        <section class="faq">
-            <div class="max-w-3xl mx-auto">
+        <section class="faq py-10 px-5">
+            <div class=" container mx-auto">
                 <h2 class="common-heading p-0">
                     FAQs
                 </h2>
@@ -703,7 +702,7 @@
                     Find answers to all your real estate questions in our comprehensive FAQ section, designed to guide you every step of the way!
                 </p>
 
-                <div class="space-y-4">
+                
                     
                     <!-- <div class="border border-[#F5F5F5] rounded-xl overflow-hidden bg-[#F5F5F5]">
                         <button
@@ -717,7 +716,7 @@
                         </div>
                     </div> -->
       
-                    <div class="border border-[#F5F5F5] rounded-xl overflow-hidden bg-[#F5F5F5]">
+                    <div class="border mb-2 border-[#F5F5F5] rounded-xl overflow-hidden bg-[#F5F5F5]">
                         <button
                             class="w-full flex justify-between items-center px-5 py-8 shadow text-left text-gray-900 font-medium hover:bg-gray-100 transition accordion-btn">
                             <span><strong class="text-darkblue me-2">1.</strong> What is the process of buying a home?</span>
@@ -728,9 +727,59 @@
                             the legal process of purchasing.
                         </div>
                     </div>
+                    <div class="border mb-2 border-[#F5F5F5] rounded-xl overflow-hidden bg-[#F5F5F5]">
+                        <button
+                            class="w-full flex justify-between items-center px-5 py-8 shadow text-left text-gray-900 font-medium hover:bg-gray-100 transition accordion-btn">
+                            <span><strong class="text-darkblue me-2">2.</strong> What is a mortgage pre-approval?</span>
+                            <span class="icon border border-slate-600 inline-block px-1 rounded-full"><i class="ri-arrow-down-s-line"></i></span>
+                        </button>
+                        <div class="p-4 text-[#6D6D6D] bg-gray-50 hidden accordion-content">
+                            A lender can pre-approve you for a loan based on your income, credit score, and debts. As a rule of thumb, your monthly housing costs shouldn’t exceed 28–30% of your gross monthly income.
+                        </div>
+                    </div>
+                    <div class="border mb-2 border-[#F5F5F5] rounded-xl overflow-hidden bg-[#F5F5F5]">
+                        <button
+                            class="w-full flex justify-between items-center px-5 py-8 shadow text-left text-gray-900 font-medium hover:bg-gray-100 transition accordion-btn">
+                            <span><strong class="text-darkblue me-2">3.</strong> How do I know how much I can afford?</span>
+                            <span class="icon border border-slate-600 inline-block px-1 rounded-full"><i class="ri-arrow-down-s-line"></i></span>
+                        </button>
+                        <div class="p-4 text-[#6D6D6D] bg-gray-50 hidden accordion-content">
+                            A lender can pre-approve you for a loan based on your income, credit score, and debts. As a rule of thumb, your monthly housing costs shouldn’t exceed 28–30% of your gross monthly income.
+                        </div>
+                    </div>
+                    <div class="border mb-2 border-[#F5F5F5] rounded-xl overflow-hidden bg-[#F5F5F5]">
+                        <button
+                            class="w-full flex justify-between items-center px-5 py-8 shadow text-left text-gray-900 font-medium hover:bg-gray-100 transition accordion-btn">
+                            <span><strong class="text-darkblue me-2">4.</strong> Should I rent or buy?</span>
+                            <span class="icon border border-slate-600 inline-block px-1 rounded-full"><i class="ri-arrow-down-s-line"></i></span>
+                        </button>
+                        <div class="p-4 text-[#6D6D6D] bg-gray-50 hidden accordion-content">
+                            A lender can pre-approve you for a loan based on your income, credit score, and debts. As a rule of thumb, your monthly housing costs shouldn’t exceed 28–30% of your gross monthly income.
+                        </div>
+                    </div>
+                    <div class="border mb-2 border-[#F5F5F5] rounded-xl overflow-hidden bg-[#F5F5F5]">
+                        <button
+                            class="w-full flex justify-between items-center px-5 py-8 shadow text-left text-gray-900 font-medium hover:bg-gray-100 transition accordion-btn">
+                            <span><strong class="text-darkblue me-2">5.</strong> What is the typical length of a rental lease?</span>
+                            <span class="icon border border-slate-600 inline-block px-1 rounded-full"><i class="ri-arrow-down-s-line"></i></span>
+                        </button>
+                        <div class="p-4 text-[#6D6D6D] bg-gray-50 hidden accordion-content">
+                            A lender can pre-approve you for a loan based on your income, credit score, and debts. As a rule of thumb, your monthly housing costs shouldn’t exceed 28–30% of your gross monthly income.
+                        </div>
+                    </div>
+                    <div class="border mb-2 border-[#F5F5F5] rounded-xl overflow-hidden bg-[#F5F5F5]">
+                        <button
+                            class="w-full flex justify-between items-center px-5 py-8 shadow text-left text-gray-900 font-medium hover:bg-gray-100 transition accordion-btn">
+                            <span><strong class="text-darkblue me-2">6.</strong> Can I make changes to a rental property?</span>
+                            <span class="icon border border-slate-600 inline-block px-1 rounded-full"><i class="ri-arrow-down-s-line"></i></span>
+                        </button>
+                        <div class="p-4 text-[#6D6D6D] bg-gray-50 hidden accordion-content">
+                            A lender can pre-approve you for a loan based on your income, credit score, and debts. As a rule of thumb, your monthly housing costs shouldn’t exceed 28–30% of your gross monthly income.
+                        </div>
+                    </div>
 
                     
-                </div>
+              
             </div>
         </section>
     </main>

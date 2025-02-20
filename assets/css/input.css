@@ -100,7 +100,32 @@ header.active {
     border-radius: 20px;
 }
 
-.testimonials{
+.testimonials {
     min-height: 100vh;
-    background: linear-gradient(#003A4B 0% , #003A4B 60%, white 40%, white 100%);
+    background: linear-gradient(#003A4B 0%, #003A4B 60%, white 40%, white 100%);
+}
+
+/* responsiveness */
+
+@media(max-width: 1024px) {
+    .nav__list {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        background: #0478D6;
+        height: 100vh;
+        width: 30%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hero__content {
+        margin: 150px;
+    }
+}
+
+@media(max-width:600px){
+    .common-btn{
+        @apply px-3 py-1
+    }
 }
