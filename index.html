@@ -30,17 +30,18 @@
         <div class="container mx-auto flex justify-between items-center p-2">
             <a href="index.html"><img src="./assets/images/logo-veidheek.png" alt="logo-img" class="lg:w-[227px] w-[150px]"></a>
             <nav class="nav flex items-center gap-5 xl:text-lg lg:text-[16px]">
-                <ul class="nav__list flex lg:flex-row flex-col items-center gap-5 uppercase text-white font-light me-5">
+                <ul class="nav__list flex lg:flex-row flex-col items-center gap-5 uppercase text-white font-light me-5 relative" id="nav-list">
                     <li class="nav__list--link"><a href="#">About us</a></li>
                     <li class="nav__list--link"><a href="#">Projects</a></li>
                     <li class="nav__list--link"><a href="#">Businesses</a></li>
                     <li class="nav__list--link"><a href="#">Career</a></li>
                     <li class="nav__list--link"><a href="#">Blogs</a></li>
                     <li class="nav__list--link"><a href="#">Contact Us</a></li>
+                    <li class="nav__list--link lg:hidden absolute right-5 top-5" id="close-nav"><a href="#"><i class="ri-arrow-left-line"></i></a></li>
                 </ul>
                 <a href="#" class="call-btn common-btn bg-darkblue text-white md:text-lg text-sm"><i class="ri-phone-fill"></i>91 12345
                     986</a>
-                <button type="button" class="nav__btn lg:hidden cursor-pointer border text-white border-dashed border-gray-300 shadow-white px-3 py-1 rounded-lg"><i
+                <button type="button" class="nav__btn lg:hidden cursor-pointer border text-white border-dashed border-gray-300 shadow-white px-3 py-1 rounded-lg active:scale-95" id="navtoggler"><i
                         class="ri-menu-fold-line"></i></button>
             </nav>
         </div>
