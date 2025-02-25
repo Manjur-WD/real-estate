@@ -1,11 +1,4 @@
-@import "tailwindcss";
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Outfit:wght@100..900&display=swap');
-
-@theme {
-    --font-dmsans: "DM Sans", serif;
-    --font-outfit: "Outfit", serif;
-    --font-mont: "Montserrat", serif;
-    --font-poppins: "Poppins", serif;
+:root {
     --color-darkbluegreen: #066682;
     --color-lightgray: #F8F8F8;
     --color-midgray: #E5E5E5;
@@ -15,12 +8,96 @@
     --color-darkblue: #196EB2;
 }
 
+.font-dmsans {
+    font-family: "DM Sans", serif;
+}
+
+.font-outfit {
+    font-family: "Outfit", serif;
+}
+
+.font-mont {
+    font-family: "Montserrat", serif;
+}
+
+.font-poppins {
+    font-family: "Poppins", serif;
+}
+
+header .brand-logo {
+    width: 227px;
+}
+
+
 .common-btn {
-    @apply px-8 py-3 rounded-[10px]
+    padding: 10px 20px;
+    border-radius: 10px;
 }
 
 .hero {
     background: url(../images/hero-bg.png) no-repeat center/cover;
+    min-height: 100vh;
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.hero__content h1{
+font-size: clamp(25px, 4vw, 80px);
+}
+
+.hero__content h1 span{
+    color: #12C9FF;
+}
+
+.hero__content p{
+    width: 60%;
+    margin: 0 auto;
+    font-weight: lighter;
+}
+
+.project-slide{
+    background: #F5F5F5;
+}
+
+.property-image {
+    height: 105%;
+    width: 100%;
+    object-fit: cover;
+    position: relative;
+    top: -15px;
+    left: 15px;
+}
+
+.project-slide .prop-call-btn{
+    color: var(--color-darkblue);
+    border: 1px solid var(--color-lightdark);
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.project-slide .common-btn{
+    background-color: var(--color-darkbluegreen);
+    text-decoration: none;
+}
+
+@media (min-width: 768px) { /* md breakpoint */
+    .responsive-height {
+        height: 105%;
+    }
+}
+
+
+
+@media (min-width: 1024px) { /* lg breakpoint */
+    .hero {
+        gap: 150px;
+    }
 }
 
 header.active {
@@ -28,6 +105,15 @@ header.active {
     -webkit-backdrop-filter: blur(16px) saturate(180%);
     background-color: rgba(15, 15, 15, 0.219);
     border: 1px solid rgba(209, 213, 219, 0.104);
+}
+
+.nav__list--link a{
+    text-decoration: none;
+    color: white;
+}
+
+.call-btn{
+    background-color: var(--color-darkbluegreen);
 }
 
 
@@ -124,8 +210,11 @@ header.active {
     }
 }
 
-@media(max-width:600px){
-    .common-btn{
+@media(max-width:600px) {
+    header .brand-logo {
+        width: 150px;
+    }
+    .common-btn {
         @apply px-3 py-1
     }
 }
