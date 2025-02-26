@@ -59,6 +59,12 @@ font-size: clamp(25px, 4vw, 80px);
     margin: 0 auto;
     font-weight: lighter;
 }
+.search-btn{
+    background-color: var(--color-darkbluegreen);
+}
+.search-btn:hover{
+    background-color: black;
+}
 
 .project-slide{
     background: #F5F5F5;
@@ -100,6 +106,10 @@ font-size: clamp(25px, 4vw, 80px);
     }
 }
 
+.container{
+    max-width: 1240px;
+}
+
 header.active {
     backdrop-filter: blur(16px) saturate(180%);
     -webkit-backdrop-filter: blur(16px) saturate(180%);
@@ -116,10 +126,118 @@ header.active {
     background-color: var(--color-darkbluegreen);
 }
 
+.text-lightgray{
+    color: var(--color-midgray);
+}
+
+.project__left p, .about-us__left p, .about-us__middle p,.about-us__middle ul li{
+    color: #6D6D6D;
+}
+
+.project__left h3, .about-us__left h3{
+    font-size: clamp(25px , 3.5vw , 100px);
+    font-weight: 900;
+}
+
+.project-nav-left , .project-nav-right{
+    width: 50px;
+    aspect-ratio: 1/1;
+    color: #67676F;
+    border: 1px solid #67676F;
+}
+
+.project-nav-left:hover , .project-nav-right:hover{
+    background-color: var(--color-darkbluegreen);
+    color: white;
+    border-color: var(--color-darkbluegreen);
+}
+
+/* Section Styling */
+.huckleberry-section {
+    background-color: #f5f5f5;
+}
+
+/* Container */
+.huckleberry-container {
+    background: url(../images/can.png) no-repeat center/cover;
+    background-attachment: fixed;
+    min-height: 400px;
+    width: 100%;
+    border-radius: 40px;
+}
+
+/* Title */
+.huckleberry-title {
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: "Poppins", sans-serif;
+    color: rgba(255, 255, 255, 0.1);
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+/* Subheading */
+.subheading {
+    font-size: 1.5rem;
+    font-weight: 600;
+    width: 70%;
+}
+
+/* Buttons */
+.btn {
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.explore-btn {
+    background-color: var(--color-darkbluegreen);
+    color: white;
+}
+
+.explore-btn:hover {
+    background-color: var(--color-darkbluegreen);
+}
+
+.visit-btn {
+    background-color: white;
+    color: var(--color-darkbluegreen);
+    border: 2px solid var(--color-darkbluegreen);
+}
+
+.visit-btn:hover {
+    background-color: var(--color-darkbluegreen);
+    color: white;
+}
+
+/* Responsive */
+@media (min-width: 992px) {
+    .subheading {
+        width: 50%;
+    }
+}
+
+
+
+.exp-years{
+    width: 150px;
+    aspect-ratio: 1/1;
+    position: absolute;
+    bottom: 80px;
+    left: 10px;
+    border: 3px solid white;
+}
 
 .common-heading,
 .banner-title {
-    @apply text-sm relative py-5
+    font-size: 16px;
+    position: relative;
+    padding: 20px 0;
 }
 
 .common-heading::after {
@@ -140,12 +258,7 @@ header.active {
     margin: 0 0 5px 5px;
 }
 
-.huccleberry {
-    background: url(../images/can.png) no-repeat center/cover;
-    background-attachment: fixed;
-    min-height: 400px;
-    width: 100%;
-}
+
 
 .rock-garden {
     background: url(../images/rock-garden.png) no-repeat center/cover;
@@ -162,11 +275,9 @@ header.active {
 .inverted-text {
     color: black;
     -webkit-text-fill-color: transparent;
-    /* Will override color (regardless of order) */
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: white;
-    transform: translateX(40%) rotate(-90deg);
-    right: 0;
+    transform: translateX(65%) rotate(-90deg);
 }
 
 .swiper-button-next,
@@ -217,13 +328,8 @@ header.active {
 }
 
 @media(max-width:600px) {
-<<<<<<< HEAD:assets/css/style.css
     header .brand-logo {
         width: 150px;
-=======
-    .nav__list{
-        width: 90%;
->>>>>>> 4c024da637d0a97cfd63c9258bb107b9552bc8f0:assets/css/input.css
     }
     .common-btn {
         @apply px-3 py-1

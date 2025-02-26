@@ -16,11 +16,11 @@ const navToggler = document.getElementById("navtoggler");
 const navClose = document.getElementById("close-nav");
 const navList = document.getElementById("nav-list");
 
-navToggler.addEventListener("click", () => {
+navToggler?.addEventListener("click", () => {
   navList.classList.add("active-nav");
 });
 
-navClose.addEventListener("click", () => {
+navClose?.addEventListener("click", () => {
   navList.classList.remove("active-nav");
 });
 
