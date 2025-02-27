@@ -58,10 +58,10 @@ document.addEventListener("DOMContentLoaded", function () {
   });
   var swiper3 = new Swiper(".testimonial-slider", {
     loop: true, // Infinite loop
-    autoplay: {
-      delay: 3000, // Auto-slide every 3s
-      disableOnInteraction: false,
-    },
+    // autoplay: {
+    //   delay: 3000, // Auto-slide every 3s
+    //   disableOnInteraction: false,
+    // },
     navigation: {
       nextEl: ".testimonial-right",
       prevEl: ".testimonial-left",

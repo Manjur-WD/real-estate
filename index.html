@@ -41,13 +41,16 @@
                     <li class="nav__list--link"><a href="#">Career</a></li>
                     <li class="nav__list--link"><a href="#">Blogs</a></li>
                     <li class="nav__list--link"><a href="#">Contact Us</a></li>
+                    <li class="nav__list--link d-lg-hidden position-absolute" id="close-nav">
+                        <a href="#"><i class="ri-arrow-left-line"></i></a>
+                    </li>
                 </ul>
                 <a href="#"
                     class="call-btn text-decoration-none common-btn bg-darkblue text-white md:text-lg text-sm"><i
                         class="ri-phone-fill"></i>91 12345
                     986</a>
                 <button type="button"
-                    class="nav__btn d-lg-none cursor-pointer border text-white border-dashed border-gray-300 shadow-white px-3 py-1 rounded-lg"><i
+                    class="nav__btn d-lg-none"><i
                         class="ri-menu-fold-line"></i></button>
             </nav>
         </div>
@@ -63,9 +66,9 @@
                     and transform their logistics organization.
                 </p>
             </div>
-            <div class="hero__filter-form bg-white mb-5 rounded-5 rounded-pill position-absolute bottom-0 w-75">
+            <div class="hero__filter-form bg-white rounded-pill mb-5 position-absolute bottom-0 w-75">
                 <form action="#" class="d-flex flex-column flex-md-row align-items-center  gap-md-0 px-2 py-2">
-                    <div class="form-group w-100 border-end border-secondary-subtle ps-3">
+                    <div class="form-group w-100 border-end border-secondary-subtle ps-md-3">
                         <label for="location" class="px-2">Location</label>
                         <select id="location"
                             class="form-select text-secondary text-opacity-75 text-small border-0 p-1 w-100 shadow-none">
@@ -96,7 +99,7 @@
                     </div>
 
                     <button type="submit"
-                        class="search-btn btn btn-primary rounded-pill h-100 px-3 py-4 w-100 w-md-auto ms-5">
+                        class="search-btn btn btn-primary rounded-pill h-100 px-3 py-md-4 py-2 w-100 w-md-auto ms-md-5 mt-md-0 mt-3">
                         Search
                     </button>
 
@@ -105,6 +108,7 @@
             </div>
 
         </section>
+        
         <section class="project w-100 my-5">
             <div class="row">
                 <div class="col-md-5 ps-lg-5">
@@ -399,27 +403,22 @@
                 </div>
             </div>
         </section>
-        <section class="p-10">
-
+        <section class="huckleberry-section py-5 font-outfit">
             <div
-                class="rock-garden relative container mx-auto rounded-3xl h-full d-flex justify-center align-items-center">
-                <p class="inverted-text text-5xl font-bold uppercase absolute font-poppins">
-                    ROCK GARDEN
-                </p>
-
-                <div class="huccleburry-content text-center">
-                    <h2 class="uppercase digital-pr-hind text-white banner-title">Explore Our Digital Presence</h2>
-                    <h3 class="text-4xl font-semibold text-white  w-[70%] mx-auto text-center  mb-10">Rock Garden,
+                class="container position-relative rock-garden text-center d-flex justify-content-center align-items-center">
+                <p class="huckleberry-title position-absolute inverted-text bottom-0 end-0">ROCK GARDEN</p>
+                <div class="huckleberry-content">
+                    <h2 class="banner-title text-uppercase text-white">Explore Our Digital Presence</h2>
+                    <h3 class="subheading text-white mx-auto fs-1">Rock Garden,
                         Ranchi – A Scenic Escape in Nature</h3>
-                    <div class="d-flex lg:d-flex-row d-flex-col justify-center align-items-center gap-5 mb-5">
-                        <a href="#" class="common-btn bg-darkblue text-white lg:text-lg text-sm">Explore More</a>
-                        <a href="#"
-                            class="Visit Website common-btn bg-white  text-darkbluegreen lg:text-lg text-sm">Visit
-                            Website<i class="ri-arrow-right-up-line"></i></a>
+                    <div class="d-flex flex-column flex-lg-row justify-content-center align-items-center gap-3 mt-4">
+                        <a href="#" class="btn explore-btn">Explore More</a>
+                        <a href="#" class="btn visit-btn">Visit Website <i class="ri-arrow-right-up-line"></i></a>
                     </div>
                 </div>
             </div>
         </section>
+
         <section class="blogs">
             <div class="container mx-auto p-5">
                 <h2 class="common-heading p-0">
@@ -428,121 +427,124 @@
                 <h3 class="text-2xl md:text-5xl font-bold mb-10">
                     Featured Insights and News
                 </h3>
-                <div class="grid lg:grid-cols-[2fr_1fr] grid-cols-1">
-                    <div class="recent-blogs grid md:grid-cols-2 grid-cols-1 gap-5 ">
-                        <div class="blog-card my-5">
-                            <img src="./assets/images/blog-2.png" alt="blog-image"
-                                class="w-full h-[250px] object-cover rounded-xl">
-                            <a class="blog-title text-xl my-3 block">Understanding the Real Estate Market: Trends to
-                                Watch in
-                                2024</a>
-                            <p class="blog-desc text-[#6D6D6D]">
-                                Online hackers generally target financial institutions, major retailers and anyone
-                                holding large amounts of consumer data (i.e. credit card companies).
-                            </p>
-                            <div class="d-flex align-items-center my-5 gap-5">
-                                <span
-                                    class="tag inline-block text-sm px-5 py-1 rounded text-white bg-darkbluegreen">Events</span>
-                                <span class="date text-[#6D6D6D]">May 13, 2024</span>
+                <div class="row my-5">
+                    <div class="col-md-8">
+                        <div class="recent-blogs row">
+                            <div class="blog-card col-md-6 mb-3">
+                                <img src="./assets/images/blog-2.png" alt="blog-image"
+                                    class="w-full h-[250px] object-cover rounded-xl">
+                                <a class="blog-title">Understanding the Real Estate Market: Trends to
+                                    Watch in
+                                    2024</a>
+                                <p>
+                                    Online hackers generally target financial institutions, major retailers and anyone
+                                    holding large amounts of consumer data (i.e. credit card companies).
+                                </p>
+                                <div class="d-flex align-items-center">
+                                    <span
+                                        class="tag">Events</span>
+                                    <span class="date ms-3">May 13, 2024</span>
+                                </div>
                             </div>
-                        </div>
-                        <div class="blog-card my-5">
-                            <img src="./assets/images/blog-1.png" alt="blog-image"
-                                class="w-full h-[250px] object-cover rounded-xl">
-                            <a class="blog-title text-xl my-3 block">“Is Now the Right Time to Buy a Home? A Market
-                                Analysis"
-                            </a>
-                            <p class="blog-desc text-[#6D6D6D] ">
-                                Online hackers generally target financial institutions, major retailers and anyone
-                                holding large amounts of consumer data (i.e. credit card companies).
-                            </p>
-                            <div class="d-flex align-items-center my-5 gap-5">
-                                <span
-                                    class="tag inline-block text-sm px-5 py-1 rounded text-white bg-darkbluegreen">Events</span>
-                                <span class="date text-[#6D6D6D]">May 13, 2024</span>
+                            <div class="blog-card col-md-6 mb-3">
+                                <img src="./assets/images/blog-1.png" alt="blog-image"
+                                    class="blog-image w-full h-[250px] object-cover rounded-4">
+                                <a class="blog-title">“Is Now the Right Time to Buy a Home? A Market
+                                    Analysis"
+                                </a>
+                                <p>
+                                    Online hackers generally target financial institutions, major retailers and anyone
+                                    holding large amounts of consumer data (i.e. credit card companies).
+                                </p>
+                                <div class="d-flex align-items-center">
+                                    <span
+                                        class="tag">Events</span>
+                                    <span class="date ms-3">May 13, 2024</span>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="blog-list p-5">
-                        <ul class="list-none border p-3 border-[#E3E3E3] rounded-lg">
-                            <li class="d-flex align-items-start gap-3 border-b mb-2 pb-3 border-[#E3E3E3]">
-                                <img src="./assets/images/blog-lis-image.png" alt="blog-list-image"
-                                    class="w-[100px] aspect-square object-cover">
-                                <div class="blog-list-content">
-                                    <p class="mb-5">
-                                        The Pros and Cons of Buying vs. Renting: What’s Best for You?
-                                    </p>
-                                    <a href="#" class="text-darkblue">Read More <i
-                                            class="ri-arrow-right-double-line"></i></a>
+                    <div class="col-md-4">
+                        <div class="blog-list">
+                            <ul class="list-none border p-2 rounded-4">
+                                <li class="d-flex align-items-start gap-3 pb-3">
+                                    <img src="./assets/images/blog-lis-image.png" alt="blog-list-image"
+                                        class="w-[100px] aspect-square object-cover">
+                                    <div class="blog-list-content">
+                                        <p>
+                                            The Pros and Cons of Buying vs. Renting: What’s Best for You?
+                                        </p>
+                                        <a href="#" class="text-darkblue">Read More <i
+                                                class="ri-arrow-right-double-line"></i></a>
+                                    </div>
+                                </li>
+                                <li class="d-flex align-items-start gap-3 pb-3">
+                                    <img src="./assets/images/blog-lis-image.png" alt="blog-list-image"
+                                        class="w-[100px] aspect-square object-cover">
+                                    <div class="blog-list-content">
+                                        <p>
+                                            How to Create an Al Product: A
+                                            Comprehensive Guide by Linkup
+                                        </p>
+                                        <a href="#" class="text-darkblue">Read More <i
+                                                class="ri-arrow-right-double-line"></i></a>
+                                    </div>
+                                </li>
+                                <li class="d-flex align-items-start gap-3 pb-3">
+                                    <img src="./assets/images/blog-lis-image.png" alt="blog-list-image"
+                                        class="w-[100px] aspect-square object-cover">
+                                    <div class="blog-list-content">
+                                        <p>
+                                            How to Create an Al Product: A
+                                            Comprehensive Guide by Linkup
+                                        </p>
+                                        <a href="#" class="text-darkblue">Read More <i
+                                                class="ri-arrow-right-double-line"></i></a>
+                                    </div>
+                                </li>
+                                <div class="text-center py-5">
+                                    <a href="#" class="bg-black text-white rounded-4 px-5 py-2 d-inline-block text-decoration-none">View All
+                                        Insights</a>
                                 </div>
-                            </li>
-                            <li class="d-flex align-items-start gap-3 border-b mb-2 pb-3 border-[#E3E3E3]">
-                                <img src="./assets/images/blog-lis-image.png" alt="blog-list-image"
-                                    class="w-[100px] aspect-square object-cover">
-                                <div class="blog-list-content">
-                                    <p class="mb-5">
-                                        How to Create an Al Product: A
-                                        Comprehensive Guide by Linkup
-                                    </p>
-                                    <a href="#" class="text-darkblue">Read More <i
-                                            class="ri-arrow-right-double-line"></i></a>
-                                </div>
-                            </li>
-                            <li class="d-flex align-items-start gap-3 border-b mb-2 pb-3 border-[#E3E3E3]">
-                                <img src="./assets/images/blog-lis-image.png" alt="blog-list-image"
-                                    class="w-[100px] aspect-square object-cover">
-                                <div class="blog-list-content">
-                                    <p class="mb-5">
-                                        How to Create an Al Product: A
-                                        Comprehensive Guide by Linkup
-                                    </p>
-                                    <a href="#" class="text-darkblue">Read More <i
-                                            class="ri-arrow-right-double-line"></i></a>
-                                </div>
-                            </li>
-                            <div class="text-center py-5">
-                                <a href="#" class="bg-black text-white rounded-lg px-10 py-2 inline-block">View All
-                                    Insights</a>
-                            </div>
-                        </ul>
+                            </ul>
+                        </div>
+                    </div>
 
-                    </div>
                 </div>
 
             </div>
         </section>
-        <section class="testimonials py-10">
+        <section class="testimonials py-5">
             <div class="container mx-auto">
-                <h2 class="uppercase digital-pr-hind text-white banner-title">TESTIMONIALS</h2>
-                <h3 class="text-5xl font-semibold text-white mb-3">What Our Customers Say</h3>
-                <div class="d-flex align-items-center justify-content-between">
-                    <p class="text-white md:w-1/2 w-full mb-5">We have a waitlist Of clients ready to view properties,
+                <h2 class="uppercase digital-pr-hind text-white banner-title m-0">TESTIMONIALS</h2>
+                <h3 class="text-5xl font-semibold text-white m-0">What Our Customers Say</h3>
+                <div class="d-flex align-items-center justify-content-between testi-main">
+                    <p>We have a waitlist Of clients ready to view properties,
                         extensive
                         comparable community
                         data and a trusted reputation. Just three of the reasons why people choose us.</p>
                     <div class="testi-nav d-flex gap-2 my-5">
                         <button type="button"
-                            class="testimonial-left rounded-full aspect-square w-12  p-2 text-black bg-white font-bold cursor-pointer active:scale-95 hover:bg-black hover:text-white"><i
+                            class="testimonial-left rounded-full aspect-square w-12  p-2 cursor-pointer"><i
                                 class="ri-arrow-left-line"></i></button>
                         <button type="button"
-                            class="testimonial-right rounded-full aspect-square w-12  p-2 text-black bg-white font-bold cursor-pointer active:scale-95 hover:bg-black hover:text-white"><i
+                            class="testimonial-right rounded-full aspect-square w-12  p-2 font-bold cursor-pointer"><i
                                 class="ri-arrow-right-line"></i></button>
                     </div>
                 </div>
 
 
                 <!-- testimonial slider -->
-                <div class="swiper testimonial-slider">
+                <div class="swiper testimonial-slider pb-5">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                            <div class="testi-card border border-gray-300 rounded-2xl overflow-hidden bg-white">
-                                <div class="testi-img relative">
+                            <div class="testi-card border border-gray-300 rounded-4 overflow-hidden bg-white">
+                                <div class="testi-img position-relative">
                                     <img src="./assets/images/testi-3.png" alt="Slide 1"
-                                        class="rounded-2xl w-full h-[250px]">
+                                        class="rounded-4 testi-image-card">
                                     <img src="./assets/images/inverted-comma.png" alt="inverted-comma-image"
-                                        class="absolute -bottom-4 left-3">
-                                    <div
-                                        class="rating-sytem text-amber-400 bg-[#0C3556] p-1 text-sm rounded-2xl inline-block px-3 absolute bottom-2 right-2 shadow-lg">
+                                        class="inverted-comma-image">
+                                    <div class="rating-sytem">
                                         <i class="ri-star-fill"></i>
                                         <i class="ri-star-fill"></i>
                                         <i class="ri-star-fill"></i>
@@ -550,144 +552,27 @@
                                         <i class="ri-star-fill"></i>
                                     </div>
                                 </div>
-                                <p class="my-2 p-3 text-[#6D6D6D] text-sm">“Working with you has been an absolute
+                                <p>“Working with you has been an absolute
                                     game-changer
                                     for us. From the moment we connected, their team demonstrated an unparalleled level
                                     of expertise.”</p>
-                                <div class="user-detail-testi d-flex align-items-center gap-3 px-5 py-2">
+                                <div class="user-detail-testi d-flex align-items-center gap-3 px-3 py-2">
                                     <img src="./assets/images/Frame 113.png" alt="buyer_image">
                                     <div class="comment">
-                                        <p class="font-bold text-lg">Jani Raudasoja</p>
-                                        <p class="text-[#6D6D6D]  text-sm">Owner of Industria Building</p>
+                                        <p>Jani Raudasoja</p>
+                                        <p>Owner of Industria Building</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="swiper-slide">
-                            <div class="testi-card border border-gray-300 rounded-2xl overflow-hidden bg-white">
-                                <div class="testi-img relative">
-                                    <img src="./assets/images/testi-4.png" alt="Slide 1"
-                                        class="rounded-2xl w-full h-[250px]">
-                                    <img src="./assets/images/inverted-comma.png" alt="inverted-comma-image"
-                                        class="absolute -bottom-4 left-3">
-                                    <div
-                                        class="rating-sytem text-amber-400 bg-[#0C3556] p-1 text-sm rounded-2xl inline-block px-3 absolute bottom-2 right-2 shadow-lg">
-                                        <i class="ri-star-fill"></i>
-                                        <i class="ri-star-fill"></i>
-                                        <i class="ri-star-fill"></i>
-                                        <i class="ri-star-fill"></i>
-                                        <i class="ri-star-fill"></i>
-                                    </div>
-                                </div>
-                                <p class="my-2 p-3 text-[#6D6D6D] text-sm">“Working with you has been an absolute
-                                    game-changer
-                                    for us. From the moment we connected, their team demonstrated an unparalleled level
-                                    of expertise.”</p>
-                                <div class="user-detail-testi d-flex align-items-center gap-3 px-5 py-2">
-                                    <img src="./assets/images/Frame 113.png" alt="buyer_image">
-                                    <div class="comment">
-                                        <p class="font-bold text-lg">Jani Raudasoja</p>
-                                        <p class="text-[#6D6D6D]  text-sm">Owner of Industria Building</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="testi-card border border-gray-300 rounded-2xl overflow-hidden bg-white">
-                                <div class="testi-img relative">
-                                    <img src="./assets/images/testi-1.png" alt="Slide 1"
-                                        class="rounded-2xl w-full h-[250px]">
-                                    <img src="./assets/images/inverted-comma.png" alt="inverted-comma-image"
-                                        class="absolute -bottom-4 left-3">
-                                    <div
-                                        class="rating-sytem text-amber-400 bg-[#0C3556] p-1 text-sm rounded-2xl inline-block px-3 absolute bottom-2 right-2 shadow-lg">
-                                        <i class="ri-star-fill"></i>
-                                        <i class="ri-star-fill"></i>
-                                        <i class="ri-star-fill"></i>
-                                        <i class="ri-star-fill"></i>
-                                        <i class="ri-star-fill"></i>
-                                    </div>
-                                </div>
-                                <p class="my-2 p-3 text-[#6D6D6D] text-sm">“Working with you has been an absolute
-                                    game-changer
-                                    for us. From the moment we connected, their team demonstrated an unparalleled level
-                                    of expertise.”</p>
-                                <div class="user-detail-testi d-flex align-items-center gap-3 px-5 py-2">
-                                    <img src="./assets/images/Frame 113.png" alt="buyer_image">
-                                    <div class="comment">
-                                        <p class="font-bold text-lg">Jani Raudasoja</p>
-                                        <p class="text-[#6D6D6D]  text-sm">Owner of Industria Building</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="testi-card border border-gray-300 rounded-2xl overflow-hidden bg-white">
-                                <div class="testi-img relative">
-                                    <img src="./assets/images/testi-1.png" alt="Slide 1"
-                                        class="rounded-2xl w-full h-[250px]">
-                                    <img src="./assets/images/inverted-comma.png" alt="inverted-comma-image"
-                                        class="absolute -bottom-4 left-3">
-                                    <div
-                                        class="rating-sytem text-amber-400 bg-[#0C3556] p-1 text-sm rounded-2xl inline-block px-3 absolute bottom-2 right-2 shadow-lg">
-                                        <i class="ri-star-fill"></i>
-                                        <i class="ri-star-fill"></i>
-                                        <i class="ri-star-fill"></i>
-                                        <i class="ri-star-fill"></i>
-                                        <i class="ri-star-fill"></i>
-                                    </div>
-                                </div>
-                                <p class="my-2 p-3 text-[#6D6D6D] text-sm">“Working with you has been an absolute
-                                    game-changer
-                                    for us. From the moment we connected, their team demonstrated an unparalleled level
-                                    of expertise.”</p>
-                                <div class="user-detail-testi d-flex align-items-center gap-3 px-5 py-2">
-                                    <img src="./assets/images/Frame 113.png" alt="buyer_image">
-                                    <div class="comment">
-                                        <p class="font-bold text-lg">Jani Raudasoja</p>
-                                        <p class="text-[#6D6D6D]  text-sm">Owner of Industria Building</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="testi-card border border-gray-300 rounded-2xl overflow-hidden bg-white">
-                                <div class="testi-img relative">
-                                    <img src="./assets/images/testi-2.png" alt="Slide 1"
-                                        class="rounded-2xl w-full h-[250px]">
-                                    <img src="./assets/images/inverted-comma.png" alt="inverted-comma-image"
-                                        class="absolute -bottom-4 left-3">
-                                    <div
-                                        class="rating-sytem text-amber-400 bg-[#0C3556] p-1 text-sm rounded-2xl inline-block px-3 absolute bottom-2 right-2 shadow-lg">
-                                        <i class="ri-star-fill"></i>
-                                        <i class="ri-star-fill"></i>
-                                        <i class="ri-star-fill"></i>
-                                        <i class="ri-star-fill"></i>
-                                        <i class="ri-star-fill"></i>
-                                    </div>
-                                </div>
-                                <p class="my-2 p-3 text-[#6D6D6D] text-sm">“Working with you has been an absolute
-                                    game-changer
-                                    for us. From the moment we connected, their team demonstrated an unparalleled level
-                                    of expertise.”</p>
-                                <div class="user-detail-testi d-flex align-items-center gap-3 px-5 py-2">
-                                    <img src="./assets/images/Frame 113.png" alt="buyer_image">
-                                    <div class="comment">
-                                        <p class="font-bold text-lg">Jani Raudasoja</p>
-                                        <p class="text-[#6D6D6D]  text-sm">Owner of Industria Building</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="testi-card border border-gray-300 rounded-2xl overflow-hidden bg-white">
-                                <div class="testi-img relative">
+                            <div class="testi-card border border-gray-300 rounded-4 overflow-hidden bg-white">
+                                <div class="testi-img position-relative">
                                     <img src="./assets/images/testi-3.png" alt="Slide 1"
-                                        class="rounded-2xl w-full h-[250px]">
+                                        class="rounded-4 testi-image-card">
                                     <img src="./assets/images/inverted-comma.png" alt="inverted-comma-image"
-                                        class="absolute -bottom-4 left-3">
-                                    <div
-                                        class="rating-sytem text-amber-400 bg-[#0C3556] p-1 text-sm rounded-2xl inline-block px-3 absolute bottom-2 right-2 shadow-lg">
+                                        class="inverted-comma-image">
+                                    <div class="rating-sytem">
                                         <i class="ri-star-fill"></i>
                                         <i class="ri-star-fill"></i>
                                         <i class="ri-star-fill"></i>
@@ -695,28 +580,27 @@
                                         <i class="ri-star-fill"></i>
                                     </div>
                                 </div>
-                                <p class="my-2 p-3 text-[#6D6D6D] text-sm">“Working with you has been an absolute
+                                <p>“Working with you has been an absolute
                                     game-changer
                                     for us. From the moment we connected, their team demonstrated an unparalleled level
                                     of expertise.”</p>
-                                <div class="user-detail-testi d-flex align-items-center gap-3 px-5 py-2">
+                                <div class="user-detail-testi d-flex align-items-center gap-3 px-3 py-2">
                                     <img src="./assets/images/Frame 113.png" alt="buyer_image">
                                     <div class="comment">
-                                        <p class="font-bold text-lg">Jani Raudasoja</p>
-                                        <p class="text-[#6D6D6D]  text-sm">Owner of Industria Building</p>
+                                        <p>Jani Raudasoja</p>
+                                        <p>Owner of Industria Building</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="swiper-slide">
-                            <div class="testi-card border border-gray-300 rounded-2xl overflow-hidden bg-white">
-                                <div class="testi-img relative">
-                                    <img src="./assets/images/testi-4.png" alt="Slide 1"
-                                        class="rounded-2xl w-full h-[250px]">
+                            <div class="testi-card border border-gray-300 rounded-4 overflow-hidden bg-white">
+                                <div class="testi-img position-relative">
+                                    <img src="./assets/images/testi-3.png" alt="Slide 1"
+                                        class="rounded-4 testi-image-card">
                                     <img src="./assets/images/inverted-comma.png" alt="inverted-comma-image"
-                                        class="absolute -bottom-4 left-3">
-                                    <div
-                                        class="rating-sytem text-amber-400 bg-[#0C3556] p-1 text-sm rounded-2xl inline-block px-3 absolute bottom-2 right-2 shadow-lg">
+                                        class="inverted-comma-image">
+                                    <div class="rating-sytem">
                                         <i class="ri-star-fill"></i>
                                         <i class="ri-star-fill"></i>
                                         <i class="ri-star-fill"></i>
@@ -724,19 +608,132 @@
                                         <i class="ri-star-fill"></i>
                                     </div>
                                 </div>
-                                <p class="my-2 p-3 text-[#6D6D6D] text-sm">“Working with you has been an absolute
+                                <p>“Working with you has been an absolute
                                     game-changer
                                     for us. From the moment we connected, their team demonstrated an unparalleled level
                                     of expertise.”</p>
-                                <div class="user-detail-testi d-flex align-items-center gap-3 px-5 py-2">
+                                <div class="user-detail-testi d-flex align-items-center gap-3 px-3 py-2">
                                     <img src="./assets/images/Frame 113.png" alt="buyer_image">
                                     <div class="comment">
-                                        <p class="font-bold text-lg">Jani Raudasoja</p>
-                                        <p class="text-[#6D6D6D]  text-sm">Owner of Industria Building</p>
+                                        <p>Jani Raudasoja</p>
+                                        <p>Owner of Industria Building</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        <div class="swiper-slide">
+                            <div class="testi-card border border-gray-300 rounded-4 overflow-hidden bg-white">
+                                <div class="testi-img position-relative">
+                                    <img src="./assets/images/testi-3.png" alt="Slide 1"
+                                        class="rounded-4 testi-image-card">
+                                    <img src="./assets/images/inverted-comma.png" alt="inverted-comma-image"
+                                        class="inverted-comma-image">
+                                    <div class="rating-sytem">
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                    </div>
+                                </div>
+                                <p>“Working with you has been an absolute
+                                    game-changer
+                                    for us. From the moment we connected, their team demonstrated an unparalleled level
+                                    of expertise.”</p>
+                                <div class="user-detail-testi d-flex align-items-center gap-3 px-3 py-2">
+                                    <img src="./assets/images/Frame 113.png" alt="buyer_image">
+                                    <div class="comment">
+                                        <p>Jani Raudasoja</p>
+                                        <p>Owner of Industria Building</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="testi-card border border-gray-300 rounded-4 overflow-hidden bg-white">
+                                <div class="testi-img position-relative">
+                                    <img src="./assets/images/testi-3.png" alt="Slide 1"
+                                        class="rounded-4 testi-image-card">
+                                    <img src="./assets/images/inverted-comma.png" alt="inverted-comma-image"
+                                        class="inverted-comma-image">
+                                    <div class="rating-sytem">
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                    </div>
+                                </div>
+                                <p>“Working with you has been an absolute
+                                    game-changer
+                                    for us. From the moment we connected, their team demonstrated an unparalleled level
+                                    of expertise.”</p>
+                                <div class="user-detail-testi d-flex align-items-center gap-3 px-3 py-2">
+                                    <img src="./assets/images/Frame 113.png" alt="buyer_image">
+                                    <div class="comment">
+                                        <p>Jani Raudasoja</p>
+                                        <p>Owner of Industria Building</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="testi-card border border-gray-300 rounded-4 overflow-hidden bg-white">
+                                <div class="testi-img position-relative">
+                                    <img src="./assets/images/testi-3.png" alt="Slide 1"
+                                        class="rounded-4 testi-image-card">
+                                    <img src="./assets/images/inverted-comma.png" alt="inverted-comma-image"
+                                        class="inverted-comma-image">
+                                    <div class="rating-sytem">
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                    </div>
+                                </div>
+                                <p>“Working with you has been an absolute
+                                    game-changer
+                                    for us. From the moment we connected, their team demonstrated an unparalleled level
+                                    of expertise.”</p>
+                                <div class="user-detail-testi d-flex align-items-center gap-3 px-3 py-2">
+                                    <img src="./assets/images/Frame 113.png" alt="buyer_image">
+                                    <div class="comment">
+                                        <p>Jani Raudasoja</p>
+                                        <p>Owner of Industria Building</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="testi-card border border-gray-300 rounded-4 overflow-hidden bg-white">
+                                <div class="testi-img position-relative">
+                                    <img src="./assets/images/testi-3.png" alt="Slide 1"
+                                        class="rounded-4 testi-image-card">
+                                    <img src="./assets/images/inverted-comma.png" alt="inverted-comma-image"
+                                        class="inverted-comma-image">
+                                    <div class="rating-sytem">
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                        <i class="ri-star-fill"></i>
+                                    </div>
+                                </div>
+                                <p>“Working with you has been an absolute
+                                    game-changer
+                                    for us. From the moment we connected, their team demonstrated an unparalleled level
+                                    of expertise.”</p>
+                                <div class="user-detail-testi d-flex align-items-center gap-3 px-3 py-2">
+                                    <img src="./assets/images/Frame 113.png" alt="buyer_image">
+                                    <div class="comment">
+                                        <p>Jani Raudasoja</p>
+                                        <p>Owner of Industria Building</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
@@ -851,24 +848,23 @@
     </main>
     <!-- FOOTER SECTION -->
     <footer class="bg-black text-white py-10">
-        <div class="container mx-auto px-6 lg:px-20">
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-
+        <div class="container mx-auto p-5">
+            <div class="row">
                 <!-- Company Info -->
-                <div>
-                    <div class="text-2xl font-semibold tracking-wider d-flex align-items-center">
+                <div class="col-md-3">
+                    <div class="text-2xl mb-3 font-semibold tracking-wider d-flex align-items-center">
                         <img src="./assets/images/logo-veidheek.png" alt="logo">
                     </div>
-                    <p class="mt-4 text-gray-400 text-sm">
+                    <p>
                         Bruchim Haba’im to Ramat Beit Shemesh! Lemkin Realty is the premier realty firm in the Beit
                         Shemesh region.
                     </p>
                 </div>
 
                 <!-- Quick Links -->
-                <div>
-                    <h3 class="text-lg font-semibold mb-4">QUICK LINKS</h3>
-                    <ul class="space-y-2 text-gray-400">
+                <div class="col-md-3">
+                    <h3 class="text-lg font-semibold mb-4 fs-5">QUICK LINKS</h3>
+                    <ul class="space-y-2 text-gray-400 list-unstyled">
                         <li><a href="#" class="hover:text-white">Buy a Home</a></li>
                         <li><a href="#" class="hover:text-white">Rent a Home</a></li>
                         <li><a href="#" class="hover:text-white">Commercial</a></li>
@@ -878,9 +874,9 @@
                 </div>
 
                 <!-- Company -->
-                <div>
-                    <h3 class="text-lg font-semibold mb-4">COMPANY</h3>
-                    <ul class="space-y-2 text-gray-400">
+                <div class="col-md-3">
+                    <h3 class="text-lg font-semibold mb-4 fs-5">COMPANY</h3>
+                    <ul class="space-y-2 text-gray-400 list-unstyled">
                         <li><a href="#" class="hover:text-white">About Us</a></li>
                         <li><a href="#" class="hover:text-white">Contact Us</a></li>
                         <li><a href="#" class="hover:text-white">Blogs</a></li>
@@ -888,40 +884,38 @@
                 </div>
 
                 <!-- Newsletter -->
-                <div>
-                    <h3 class="text-lg font-semibold mb-4">STAY UPDATED WITH OUR NEWSLETTER</h3>
-                    <div class="relative">
+                <div class="col-md-3">
+                    <h3 class="text-lg font-semibold mb-4 fs-5">STAY UPDATED WITH OUR NEWSLETTER</h3>
+                    <div class="position-relative newsletter-form">
                         <input type="email" placeholder="Enter your email"
-                            class="w-full px-4 py-2 rounded-full bg-gray-800 text-white focus:outline-none">
-                        <button class="absolute right-2 top-1/2 transform -translate-y-1/2 text-blue-400">
+                            class="w-100 px-4 py-2 rounded-pill bg-white">
+                        <button class="position-absolute text-info transform -translate-y-1/2 text-blue-400">
                             <i class="ri-send-plane-fill"></i>
                         </button>
                     </div>
                 </div>
             </div>
-
-
         </div>
         <!-- Divider -->
-        <div class="border-t border-gray-800 my-6"></div>
-        <div class="d-flex d-flex-wrap justify-center align-items-center space-x-6 mt-4 md:mt-0">
-            <p class="font-bold text-sm ">FOLLOW US ON</p>
+        <div class="border-top"></div>
+        <div class="follow  d-flex gap-lg-5 gap-3 flex-wrap justify-content-center align-items-center space-x-6 my-4">
+            <p>FOLLOW US ON</p>
             <a href="#" class="hover:text-white"><i class="ri-facebook-circle-line"></i> Facebook</a>
             <a href="#" class="hover:text-white"><i class="ri-pinterest-line"></i> Pinterest</a>
             <a href="#" class="hover:text-white"><i class="ri-instagram-line"></i> Instagram</a>
             <a href="#" class="hover:text-white"><i class="ri-twitter-x-line"></i> Twitter</a>
             <a href="#" class="hover:text-white"><i class="ri-youtube-line"></i> YouTube</a>
         </div>
-        <div class="border-t border-gray-800 my-6"></div>
+        <div class="border-top border-gray-800 my-6"></div>
         <!-- Social & Legal -->
         <div
-            class="containermx-auto px-6 lg:px-20 d-flex  md:d-flex-row d-flex-col lg:gap-0  gap-5 justify-content-between align-items-center text-gray-400 text-sm">
-            <div class="d-flex space-x-4">
-                <a href="#" class="hover:text-white">Terms & Conditions</a>
+            class="copyright p-3  container mx-auto d-flex  flex-md-row flex-column gap-lg-0  gap-5 justify-content-between align-items-center">
+            <div class="d-flex gap-2">
+                <a href="#" class="text-decoration-none text-white">Terms & Conditions</a>
                 <span>•</span>
-                <a href="#" class="hover:text-white">Privacy Policy</a>
+                <a href="#" class="text-decoration-none text-white">Privacy Policy</a>
             </div>
-            <p class="mb-4 md:mb-0">© 2025 REAL ESTATE</p>
+            <p>© 2025 REAL ESTATE</p>
 
         </div>
     </footer>

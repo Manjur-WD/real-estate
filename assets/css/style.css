@@ -46,27 +46,29 @@ header .brand-logo {
     gap: 5px;
 }
 
-.hero__content h1{
-font-size: clamp(25px, 4vw, 80px);
+.hero__content h1 {
+    font-size: clamp(25px, 4vw, 80px);
 }
 
-.hero__content h1 span{
+.hero__content h1 span {
     color: #12C9FF;
 }
 
-.hero__content p{
+.hero__content p {
     width: 60%;
     margin: 0 auto;
     font-weight: lighter;
 }
-.search-btn{
+
+.search-btn {
     background-color: var(--color-darkbluegreen);
 }
-.search-btn:hover{
+
+.search-btn:hover {
     background-color: black;
 }
 
-.project-slide{
+.project-slide {
     background: #F5F5F5;
 }
 
@@ -79,7 +81,7 @@ font-size: clamp(25px, 4vw, 80px);
     left: 15px;
 }
 
-.project-slide .prop-call-btn{
+.project-slide .prop-call-btn {
     color: var(--color-darkblue);
     border: 1px solid var(--color-lightdark);
     padding: 10px 20px;
@@ -87,12 +89,14 @@ font-size: clamp(25px, 4vw, 80px);
     background-color: white;
 }
 
-.project-slide .common-btn{
+.project-slide .common-btn {
     background-color: var(--color-darkbluegreen);
     text-decoration: none;
 }
 
-@media (min-width: 768px) { /* md breakpoint */
+@media (min-width: 768px) {
+
+    /* md breakpoint */
     .responsive-height {
         height: 105%;
     }
@@ -100,14 +104,16 @@ font-size: clamp(25px, 4vw, 80px);
 
 
 
-@media (min-width: 1024px) { /* lg breakpoint */
+@media (min-width: 1024px) {
+
+    /* lg breakpoint */
     .hero {
         gap: 150px;
     }
 }
 
-.container{
-    max-width: 1240px;
+.container {
+    max-width: 1260px;
 }
 
 header.active {
@@ -117,36 +123,44 @@ header.active {
     border: 1px solid rgba(209, 213, 219, 0.104);
 }
 
-.nav__list--link a{
+.nav__list--link a {
     text-decoration: none;
     color: white;
 }
 
-.call-btn{
+.call-btn {
     background-color: var(--color-darkbluegreen);
 }
 
-.text-lightgray{
+.text-lightgray {
     color: var(--color-midgray);
 }
 
-.project__left p, .about-us__left p, .about-us__middle p,.about-us__middle ul li{
+.project__left p,
+.about-us__left p,
+.about-us__middle p,
+.about-us__middle ul li {
     color: #6D6D6D;
 }
 
-.project__left h3, .about-us__left h3{
-    font-size: clamp(25px , 3.5vw , 100px);
+.project__left h3,
+.about-us__left h3,
+.testimonials h3,
+.blogs h3 {
+    font-size: clamp(25px, 3.5vw, 100px);
     font-weight: 900;
 }
 
-.project-nav-left , .project-nav-right{
+.project-nav-left,
+.project-nav-right {
     width: 50px;
     aspect-ratio: 1/1;
     color: #67676F;
     border: 1px solid #67676F;
 }
 
-.project-nav-left:hover , .project-nav-right:hover{
+.project-nav-left:hover,
+.project-nav-right:hover {
     background-color: var(--color-darkbluegreen);
     color: white;
     border-color: var(--color-darkbluegreen);
@@ -155,6 +169,37 @@ header.active {
 /* Section Styling */
 .huckleberry-section {
     background-color: #f5f5f5;
+}
+
+.blog-card img {
+    height: 250px;
+}
+
+.blog-title {
+    color: black;
+    text-decoration: none;
+    margin: 10px 0;
+    display: block;
+    font-size: clamp(16px, 2vw, 18px);
+    font-weight: 500;
+
+}
+
+.blog-card .tag {
+    background-color: #0478D6;
+    padding: 5px 10px;
+    color: white;
+    border-radius: 5px;
+}
+
+.blog-card p , .blog-card .date {
+    color: #6D6D6D;
+}
+
+.blog-list img{
+    width: 100px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
 }
 
 /* Container */
@@ -224,7 +269,7 @@ header.active {
 
 
 
-.exp-years{
+.exp-years {
     width: 150px;
     aspect-ratio: 1/1;
     position: absolute;
@@ -265,6 +310,7 @@ header.active {
     background-attachment: fixed;
     min-height: 400px;
     width: 100%;
+    border-radius: 40px;
 }
 
 
@@ -302,6 +348,72 @@ header.active {
     background: linear-gradient(#003A4B 0%, #003A4B 60%, white 40%, white 100%);
 }
 
+.testi-main p {
+    width: 50%;
+    color: white;
+}
+
+.testimonial-left,
+.testimonial-right {
+    color: black;
+    border-radius: 50%;
+    border: none;
+    width: 50px;
+    aspect-ratio: 1/1;
+}
+
+.testimonial-left:hover,
+.testimonial-right:hover {
+    color: white;
+    background-color: black;
+}
+
+.testi-image-card {
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.rating-sytem {
+    background-color: #054d63;
+    color: gold;
+    padding: 5px 10px;
+    border-radius: 25px;
+    display: inline-block;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+
+.inverted-comma-image {
+    position: absolute;
+    left: 15px;
+    bottom: -20px;
+}
+
+.testi-card {
+    border: 1px solid whitesmoke;
+}
+
+.testi-card>p {
+    margin-top: 30px;
+    margin-bottom: 0;
+    padding: 10px 20px;
+}
+
+.comment p {
+    margin: 0;
+}
+
+.comment p:first-child {
+    font-weight: bold;
+}
+
+.comment p:last-child {
+    font-weight: 400;
+    font-size: 14px;
+}
+
 /* responsiveness */
 
 @media(max-width: 1024px) {
@@ -312,26 +424,89 @@ header.active {
         background: black;
         height: 100vh;
         width: 30%;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
         border-radius: 0 20px 20px 0;
         transition: all 0.5s ease-in-out;
+        z-index: 9999;
     }
 
     .active-nav {
         left: 0;
+    } 
+    
+    #close-nav{
+        top: 10px;
+        right: 10px;
+        color: white;
     }
 
-    .hero__content {
-        margin: 150px;
-    }
+}
+
+.nav__btn{
+    border: 1px dashed white;
+    padding: 5px 10px;
+    border-radius: 10px;
+    margin-left: 10px;
+    color: white;
+    background-color: transparent;
 }
 
 @media(max-width:600px) {
     header .brand-logo {
         width: 150px;
     }
+
+    .hero{
+        justify-content: flex-start;
+        padding-top: 100px;
+    }
+
+    .hero__filter-form{
+        border-radius: 20px !important;
+    }
+
     .common-btn {
         @apply px-3 py-1
     }
+}
+
+
+
+footer ul li a, footer p {
+    color: #d4d1d1;
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+footer ul li a:hover {
+    color: white;
+}
+
+.newsletter-form button {
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10px;
+    border: none;
+    background: white;
+}
+
+.newsletter-form input {
+    border: none;
+}
+
+.newsletter-form input:focus {
+    outline: none;
+}
+
+.follow p,
+.copyright p {
+    margin: 0;
+}
+
+.follow a {
+    color: white;
+    text-decoration: none;
 }
