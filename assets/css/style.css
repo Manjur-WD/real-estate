@@ -8,6 +8,10 @@
     --color-darkblue: #196EB2;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .font-dmsans {
     font-family: "DM Sans", serif;
 }
@@ -69,7 +73,8 @@ header .brand-logo {
 }
 
 .project-slide {
-    background: #F5F5F5;
+    background: #F1F9FF;
+    border: 1px solid whitesmoke;
 }
 
 .property-image {
@@ -116,6 +121,10 @@ header .brand-logo {
     max-width: 1260px;
 }
 
+header {
+    z-index: 99999;
+}
+
 header.active {
     backdrop-filter: blur(16px) saturate(180%);
     -webkit-backdrop-filter: blur(16px) saturate(180%);
@@ -146,7 +155,8 @@ header.active {
 .project__left h3,
 .about-us__left h3,
 .testimonials h3,
-.blogs h3 {
+.blogs h3,
+.faq h3 {
     font-size: clamp(25px, 3.5vw, 100px);
     font-weight: 900;
 }
@@ -192,11 +202,12 @@ header.active {
     border-radius: 5px;
 }
 
-.blog-card p , .blog-card .date {
+.blog-card p,
+.blog-card .date {
     color: #6D6D6D;
 }
 
-.blog-list img{
+.blog-list img {
     width: 100px;
     aspect-ratio: 1/1;
     object-fit: cover;
@@ -267,8 +278,6 @@ header.active {
     }
 }
 
-
-
 .exp-years {
     width: 150px;
     aspect-ratio: 1/1;
@@ -303,8 +312,6 @@ header.active {
     margin: 0 0 5px 5px;
 }
 
-
-
 .rock-garden {
     background: url(../images/rock-garden.png) no-repeat center/cover;
     background-attachment: fixed;
@@ -312,7 +319,6 @@ header.active {
     width: 100%;
     border-radius: 40px;
 }
-
 
 .about-us__middle ul li {
     list-style-image: url(../images/Frame.png);
@@ -423,7 +429,7 @@ header.active {
         left: -100%;
         background: black;
         height: 100vh;
-        width: 30%;
+        width: 50%;
         flex-direction: column;
         align-items: center;
         justify-content: center;
@@ -434,9 +440,9 @@ header.active {
 
     .active-nav {
         left: 0;
-    } 
-    
-    #close-nav{
+    }
+
+    #close-nav {
         top: 10px;
         right: 10px;
         color: white;
@@ -444,7 +450,7 @@ header.active {
 
 }
 
-.nav__btn{
+.nav__btn {
     border: 1px dashed white;
     padding: 5px 10px;
     border-radius: 10px;
@@ -458,12 +464,16 @@ header.active {
         width: 150px;
     }
 
-    .hero{
+    .nav__list {
+        width: 60%;
+    }
+
+    .hero {
         justify-content: flex-start;
         padding-top: 100px;
     }
 
-    .hero__filter-form{
+    .hero__filter-form {
         border-radius: 20px !important;
     }
 
@@ -509,4 +519,169 @@ footer ul li a:hover {
 .follow a {
     color: white;
     text-decoration: none;
+}
+
+.breadcrumb-custom {
+    min-height: 500px;
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.479), rgba(0, 0, 0, 0.451)), url(../images/project/breadcrumb.png) no-repeat center/cover;
+}
+
+
+.breadcrumb-custom h2 {
+    font-size: clamp(25px, 5vw, 64px);
+}
+
+.breadcrumb-custom p {
+    font-size: clamp(16px, 2.5vw, 18px);
+    font-weight: 200;
+    width: 50%;
+    margin: auto;
+}
+
+/* /////////////////////////////////// */
+
+.project-slide-content p {
+    color: #67676F;
+}
+
+.project-slide-content p:first-child {
+    color: #0478D6;
+    font-size: 22px;
+}
+
+.project-select-category a {
+    background-color: white;
+    border: 1px solid #066682;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: inline-block;
+    width: 180px;
+    color: #066682;
+    text-align: center;
+    border-radius: 50px;
+}
+
+.project-select-category a.active,
+.project-select-category a:hover {
+    background-color: #066682;
+    color: white;
+}
+
+.projects-list .project-slide img {
+    height: 500px;
+}
+
+.projects-list .project-slide:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.project-pagination nav {
+    background: #F7F7F7;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(212, 209, 209);
+    padding: 5px;
+}
+
+.page-link {
+    background-color: transparent;
+    border: none;
+    color: #6A6C76;
+    font-size: 22px;
+    padding: 5px 15px;
+}
+
+
+
+.page-link.active,
+.page-link:hover {
+    background-color: #066682;
+    border-radius: 10px;
+    color: white;
+}
+
+.project-price {
+    font-size: clamp(16px, 1.7vw, 60px);
+    background: #ED1C24;
+    clip-path: polygon(100% 0%, 92% 49%, 100% 100%, 0 100%, 0% 50%, 0 1%);
+    padding: 20px 50px 20px 20px;
+    color: white;
+    left: 25px;
+    bottom: 40px;
+}
+
+@media(max-width: 600px) {
+    .page-link {
+        font-size: 12px;
+        padding: 5px 15px;
+    }
+
+    .projects-list .project-slide img {
+        height: 300px;
+    }
+
+    .breadcrumb-custom p {
+        width: 100%;
+    }
+}
+
+.accordion-button {
+    background-color: #E5E5E5;
+    border-radius: 20px;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+    background-color: #E5E5E5;
+}
+
+.accordion-item {
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 20px !important;
+    overflow: hidden;
+    background: #E5E5E5;
+}
+
+.accordion-no {
+    color: #054d63;
+}
+.project-details-tabs{
+    position: sticky;
+    top: 130px;
+}
+.project-details-tabs ul {
+    background-color: #066682;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: white;
+    margin: 0;
+    border-radius: 50px;
+    position: relative;
+    top: -50px;
+    overflow: hidden;
+    box-shadow: 0 0 5px grey;
+    border: 4px solid white;
+}
+
+.project-details-tabs ul li{
+    padding: 20px 20px;
+    border-right: 1px solid #E5E5E5;
+    width: 120px;
+    cursor: pointer;
+}
+.project-details-tabs ul li p{
+    margin: 0;
+}
+.project-details-tabs ul li img{
+    width: 30px;
+}
+.project-details-tabs ul li:last-child{
+    border: none;
+}
+
+.project-details-tabs ul li:hover{
+    background-color: #054d63;
 }

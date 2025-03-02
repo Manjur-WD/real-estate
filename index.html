@@ -29,28 +29,27 @@
 
 <body class="font-outfit">
     <!-- HEADER -->
-    <header class="position-fixed top-0 w-100 z-3" id="header">
-        <div class="container  d-flex justify-content-between align-items-center p-2">
+    <header class="position-fixed top-0 w-100" id="header">
+        <div class="container  d-flex justify-content-between align-items-center px-xl-0 px-4">
             <a href="index.html"><img src="./assets/images/logo-veidheek.png" alt="logo-img" class="brand-logo"></a>
             <nav class="nav d-flex align-items-center">
-                <ul
-                    class="nav__list m-0 d-flex align-items-center gap-4 text-uppercase text-white font-light me-4 list-unstyled">
+                <ul class="nav__list m-0 d-flex align-items-center gap-4 text-uppercase text-white font-light me-4 list-unstyled"
+                    id="nav-list">
                     <li class="nav__list--link"><a href="#">About us</a></li>
-                    <li class="nav__list--link"><a href="#">Projects</a></li>
+                    <li class="nav__list--link"><a href="projects.html">Projects</a></li>
                     <li class="nav__list--link"><a href="#">Businesses</a></li>
                     <li class="nav__list--link"><a href="#">Career</a></li>
                     <li class="nav__list--link"><a href="#">Blogs</a></li>
                     <li class="nav__list--link"><a href="#">Contact Us</a></li>
-                    <li class="nav__list--link d-lg-hidden position-absolute" id="close-nav">
-                        <a href="#"><i class="ri-arrow-left-line"></i></a>
+                    <li class="nav__list--link d-xl-none position-absolute" id="close-nav">
+                        <button class="border-0 bg-transparent text-white"><i class="ri-arrow-left-line"></i></button>
                     </li>
                 </ul>
                 <a href="#"
-                    class="call-btn text-decoration-none common-btn bg-darkblue text-white md:text-lg text-sm"><i
+                    class="call-btn text-decoration-none d-sm-block d-none common-btn bg-darkblue text-white md:text-lg text-sm"><i
                         class="ri-phone-fill"></i>91 12345
                     986</a>
-                <button type="button"
-                    class="nav__btn d-lg-none"><i
+                <button type="button" id="navtoggler" class="nav__btn d-xl-none"><i
                         class="ri-menu-fold-line"></i></button>
             </nav>
         </div>
@@ -108,7 +107,7 @@
             </div>
 
         </section>
-        
+
         <section class="project w-100 my-5">
             <div class="row">
                 <div class="col-md-5 ps-lg-5">
@@ -145,10 +144,10 @@
                                             class="property-image">
                                     </div>
                                     <div class="col-md-6">
-                                        <div class="p-3">
+                                        <div class="p-3 project-slide-content">
                                             <p>01.</p>
                                             <h2 class="text-4xl font-semibold mb-2">Business Bay</h2>
-                                            <p><i class="ri-map-pin-2-fill me-2"></i>New Town
+                                            <p><i class="ri-map-pin-2-fill me-2 text-danger"></i>New Town
                                                 Akhanksha Crossing</p>
                                             <div class="gradient-divider my-3"></div>
                                             <p>Vaidheeki is an Indian property group with a
@@ -441,8 +440,7 @@
                                     holding large amounts of consumer data (i.e. credit card companies).
                                 </p>
                                 <div class="d-flex align-items-center">
-                                    <span
-                                        class="tag">Events</span>
+                                    <span class="tag">Events</span>
                                     <span class="date ms-3">May 13, 2024</span>
                                 </div>
                             </div>
@@ -457,8 +455,7 @@
                                     holding large amounts of consumer data (i.e. credit card companies).
                                 </p>
                                 <div class="d-flex align-items-center">
-                                    <span
-                                        class="tag">Events</span>
+                                    <span class="tag">Events</span>
                                     <span class="date ms-3">May 13, 2024</span>
                                 </div>
                             </div>
@@ -503,7 +500,9 @@
                                     </div>
                                 </li>
                                 <div class="text-center py-5">
-                                    <a href="#" class="bg-black text-white rounded-4 px-5 py-2 d-inline-block text-decoration-none">View All
+                                    <a href="#"
+                                        class="bg-black text-white rounded-4 px-5 py-2 d-inline-block text-decoration-none">View
+                                        All
                                         Insights</a>
                                 </div>
                             </ul>
@@ -751,93 +750,61 @@
                     you every step of the way!
                 </p>
 
-
-
-                <!-- <div class="border border-[#F5F5F5] rounded-xl overflow-hidden bg-[#F5F5F5]">
-                        <button
-                            class="w-full d-flex justify-content-between align-items-center px-5 py-8 shadow text-left text-gray-900 font-medium hover:bg-gray-100 transition accordion-btn">
-                            <span><strong class="text-darkbluegreen">1.</strong> What is the process of buying a home?</span>
-                            <span class="icon"><i class="ri-arrow-down-s-line"></i></span>
-                        </button>
-                        <div class="p-4 text-[#6D6D6D] bg-gray-50 hidden accordion-content">
-                            The process involves finding a property, securing financing, making an offer, and completing
-                            the legal process of purchasing.
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                <span class="accordion-no me-2">01.</span>What is the process of buying a home?
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <strong>This is the first item's accordion body.</strong> It is shown by default, until
+                                the collapse plugin adds the appropriate classes that we use to style each element.
+                                These classes control the overall appearance, as well as the showing and hiding via CSS
+                                transitions. You can modify any of this with custom CSS or overriding our default
+                                variables. It's also worth noting that just about any HTML can go within the
+                                <code>.accordion-body</code>, though the transition does limit overflow.
+                            </div>
                         </div>
-                    </div> -->
-
-                <div class="border mb-2 border-[#F5F5F5] rounded-xl overflow-hidden bg-[#F5F5F5]">
-                    <button
-                        class="w-full d-flex justify-content-between align-items-center px-5 py-8 shadow text-left text-gray-900 font-medium hover:bg-gray-100 transition accordion-btn">
-                        <span><strong class="text-darkblue me-2">1.</strong> What is the process of buying a
-                            home?</span>
-                        <span class="icon border border-slate-600 inline-block px-1 rounded-full"><i
-                                class="ri-arrow-down-s-line"></i></span>
-                    </button>
-                    <div class="p-4 text-[#6D6D6D] bg-gray-50 hidden accordion-content">
-                        The process involves finding a property, securing financing, making an offer, and completing
-                        the legal process of purchasing.
                     </div>
-                </div>
-                <div class="border mb-2 border-[#F5F5F5] rounded-xl overflow-hidden bg-[#F5F5F5]">
-                    <button
-                        class="w-full d-flex justify-content-between align-items-center px-5 py-8 shadow text-left text-gray-900 font-medium hover:bg-gray-100 transition accordion-btn">
-                        <span><strong class="text-darkblue me-2">2.</strong> What is a mortgage pre-approval?</span>
-                        <span class="icon border border-slate-600 inline-block px-1 rounded-full"><i
-                                class="ri-arrow-down-s-line"></i></span>
-                    </button>
-                    <div class="p-4 text-[#6D6D6D] bg-gray-50 hidden accordion-content">
-                        A lender can pre-approve you for a loan based on your income, credit score, and debts. As a rule
-                        of thumb, your monthly housing costs shouldn’t exceed 28–30% of your gross monthly income.
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                <span class="accordion-no me-2">02.</span>What is the process of buying a home?
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <strong>This is the second item's accordion body.</strong> It is hidden by default,
+                                until the collapse plugin adds the appropriate classes that we use to style each
+                                element. These classes control the overall appearance, as well as the showing and hiding
+                                via CSS transitions. You can modify any of this with custom CSS or overriding our
+                                default variables. It's also worth noting that just about any HTML can go within the
+                                <code>.accordion-body</code>, though the transition does limit overflow.
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="border mb-2 border-[#F5F5F5] rounded-xl overflow-hidden bg-[#F5F5F5]">
-                    <button
-                        class="w-full d-flex justify-content-between align-items-center px-5 py-8 shadow text-left text-gray-900 font-medium hover:bg-gray-100 transition accordion-btn">
-                        <span><strong class="text-darkblue me-2">3.</strong> How do I know how much I can afford?</span>
-                        <span class="icon border border-slate-600 inline-block px-1 rounded-full"><i
-                                class="ri-arrow-down-s-line"></i></span>
-                    </button>
-                    <div class="p-4 text-[#6D6D6D] bg-gray-50 hidden accordion-content">
-                        A lender can pre-approve you for a loan based on your income, credit score, and debts. As a rule
-                        of thumb, your monthly housing costs shouldn’t exceed 28–30% of your gross monthly income.
-                    </div>
-                </div>
-                <div class="border mb-2 border-[#F5F5F5] rounded-xl overflow-hidden bg-[#F5F5F5]">
-                    <button
-                        class="w-full d-flex justify-content-between align-items-center px-5 py-8 shadow text-left text-gray-900 font-medium hover:bg-gray-100 transition accordion-btn">
-                        <span><strong class="text-darkblue me-2">4.</strong> Should I rent or buy?</span>
-                        <span class="icon border border-slate-600 inline-block px-1 rounded-full"><i
-                                class="ri-arrow-down-s-line"></i></span>
-                    </button>
-                    <div class="p-4 text-[#6D6D6D] bg-gray-50 hidden accordion-content">
-                        A lender can pre-approve you for a loan based on your income, credit score, and debts. As a rule
-                        of thumb, your monthly housing costs shouldn’t exceed 28–30% of your gross monthly income.
-                    </div>
-                </div>
-                <div class="border mb-2 border-[#F5F5F5] rounded-xl overflow-hidden bg-[#F5F5F5]">
-                    <button
-                        class="w-full d-flex justify-content-between align-items-center px-5 py-8 shadow text-left text-gray-900 font-medium hover:bg-gray-100 transition accordion-btn">
-                        <span><strong class="text-darkblue me-2">5.</strong> What is the typical length of a rental
-                            lease?</span>
-                        <span class="icon border border-slate-600 inline-block px-1 rounded-full"><i
-                                class="ri-arrow-down-s-line"></i></span>
-                    </button>
-                    <div class="p-4 text-[#6D6D6D] bg-gray-50 hidden accordion-content">
-                        A lender can pre-approve you for a loan based on your income, credit score, and debts. As a rule
-                        of thumb, your monthly housing costs shouldn’t exceed 28–30% of your gross monthly income.
-                    </div>
-                </div>
-                <div class="border mb-2 border-[#F5F5F5] rounded-xl overflow-hidden bg-[#F5F5F5]">
-                    <button
-                        class="w-full d-flex justify-content-between align-items-center px-5 py-8 shadow text-left text-gray-900 font-medium hover:bg-gray-100 transition accordion-btn">
-                        <span><strong class="text-darkblue me-2">6.</strong> Can I make changes to a rental
-                            property?</span>
-                        <span class="icon border border-slate-600 inline-block px-1 rounded-full"><i
-                                class="ri-arrow-down-s-line"></i></span>
-                    </button>
-                    <div class="p-4 text-[#6D6D6D] bg-gray-50 hidden accordion-content">
-                        A lender can pre-approve you for a loan based on your income, credit score, and debts. As a rule
-                        of thumb, your monthly housing costs shouldn’t exceed 28–30% of your gross monthly income.
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                <span class="accordion-no me-2">03.</span>What is the process of buying a home?
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <strong>This is the third item's accordion body.</strong> It is hidden by default, until
+                                the collapse plugin adds the appropriate classes that we use to style each element.
+                                These classes control the overall appearance, as well as the showing and hiding via CSS
+                                transitions. You can modify any of this with custom CSS or overriding our default
+                                variables. It's also worth noting that just about any HTML can go within the
+                                <code>.accordion-body</code>, though the transition does limit overflow.
+                            </div>
+                        </div>
                     </div>
                 </div>
 
@@ -922,7 +889,9 @@
 
     <!-- SCRIPT -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
     <script src="./assets/js/main.js"></script>
 </body>
 

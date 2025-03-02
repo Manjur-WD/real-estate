@@ -17,11 +17,11 @@ const navClose = document.getElementById("close-nav");
 const navList = document.getElementById("nav-list");
 
 navToggler?.addEventListener("click", () => {
-  navList.classList.add("active-nav");
+  navList?.classList.add("active-nav");
 });
 
 navClose?.addEventListener("click", () => {
-  navList.classList.remove("active-nav");
+  navList?.classList.remove("active-nav");
 });
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -118,4 +118,26 @@ accordions.forEach((button) => {
       icon.innerHTML = `<i class="ri-arrow-down-s-line"></i>`;
     }
   });
+});
+
+// Project details nav
+
+document.addEventListener("DOMContentLoaded", function () {
+  const sections = document.querySelectorAll("section");
+  const navLinks = document.querySelectorAll(".nav-link");
+
+  function highlightNav() {
+    let scrollPosition = window.scrollY;
+
+    sections.forEach((section, index) => {
+      if (scrollPosition >= section.offsetTop - 100 &&
+        scrollPosition < section.offsetTop + section.offsetHeight - 100) {
+        navLinks.forEach((link) => link.classList.remove("active"));
+        navLinks[index].classList.add("active");
+      }
+    });
+  }
+
+  window.addEventListener("scroll", highlightNav);
+  highlightNav(); // Call once to set the active link on page load
 });
