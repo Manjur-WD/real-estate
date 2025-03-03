@@ -145,7 +145,7 @@ header.active {
     color: var(--color-midgray);
 }
 
-.about-us{
+.about-us {
     background-color: #F8F8F8;
 }
 
@@ -160,7 +160,8 @@ header.active {
 .about-us__left h3,
 .testimonials h3,
 .blogs h3,
-.faq h3 {
+.faq h3,
+.property-gallery h3 {
     font-size: clamp(25px, 3.5vw, 100px);
     font-weight: 900;
 }
@@ -292,13 +293,24 @@ header.active {
 }
 
 .common-heading,
-.banner-title {
+.banner-title,
+.other-common-heading {
     font-size: 16px;
     position: relative;
     padding: 20px 0;
 }
 
-.common-heading::after {
+.common-heading::after,
+.other-common-heading:after {
+    content: "";
+    height: 1px;
+    width: 120px;
+    background-color: #0478D6;
+    display: inline-block;
+    margin: 0 0 5px 5px;
+}
+
+.other-common-heading:before {
     content: "";
     height: 1px;
     width: 120px;
@@ -615,6 +627,9 @@ footer ul li a:hover {
 }
 
 @media(max-width: 600px) {
+    .highlights div {
+        border: none !important;
+    } 
     .page-link {
         font-size: 12px;
         padding: 5px 15px;
@@ -654,6 +669,7 @@ footer ul li a:hover {
 .project-details-tabs {
     position: sticky;
     top: 130px;
+    z-index: 99;
 }
 
 .project-details-tabs ul {
@@ -673,7 +689,7 @@ footer ul li a:hover {
 }
 
 .project-details-tabs ul li {
-    padding: 20px 20px;
+    padding: 10px 20px;
     border-right: 1px solid #E5E5E5;
     width: 120px;
     cursor: pointer;
@@ -681,6 +697,7 @@ footer ul li a:hover {
 
 .project-details-tabs ul li p {
     margin: 0;
+    font-size: clamp(10px, 1vw, 12px);
 }
 
 .project-details-tabs ul li img {
@@ -693,4 +710,122 @@ footer ul li a:hover {
 
 .project-details-tabs ul li:hover {
     background-color: #054d63;
+}
+
+
+.overview-image::before {
+    content: "";
+    width: 40px;
+    height: 80%;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #43D5FF;
+    display: inline-block;
+    position: absolute;
+    left: 5px;
+    z-index: -1;
+}
+
+.overview-block::after {
+    content: "";
+    width: 8px;
+    height: 40px;
+    background-color: #066682;
+    display: inline-block;
+    border-radius: 0 10px 10px 0;
+    position: absolute;
+    left: 0;
+    top: 20px;
+}
+
+.swiper-slide:nth-child(odd) .overview-block {
+    background-color: #D9F6FF;
+    border: 1px solid #A7E0F0;
+}
+
+.swiper-slide:nth-child(even) .overview-block {
+    background-color: white;
+}
+
+.overview-next-btn {
+    background-color: #066682;
+    color: white;
+    width: 50px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+}
+
+.highlights {
+    background-color: #066682;
+
+}
+
+.highlights div {
+    border-color: rgba(255, 255, 255, 0.346) !important;
+}
+
+.highlight-image img {
+    height: 600px;
+    position: relative;
+    bottom: -30px;
+}
+
+.project-enquiry p {
+    margin: 0;
+}
+
+.project-enquiry h5 {
+    margin-bottom: 5px;
+}
+
+.call p,
+.whatsapp p {
+    color: #12C9FF;
+}
+
+.project-enquiry form {
+    background-color: #F1F9FF;
+    padding: 50px;
+    border-radius: 20px;
+}
+
+.project-enquiry form label,
+.project-enquiry form input,
+.project-enquiry form textarea {
+    width: 100%;
+}
+
+.project-enquiry form label {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.project-enquiry form input,
+.project-enquiry form textarea {
+    border: none;
+    background: transparent;
+    /* outline: none; */
+    border-bottom: 1px solid #d4d1d1;
+    padding: 10px 0;
+}
+
+.project-enquiry form input:focus,
+.project-enquiry form textarea:focus{
+    outline: none;
+}
+
+.project-enquiry form button{
+    background-color: #066682;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.project-enquiry form button:active{
+    scale: 0.95;
+}
+.project-details-tabs ul li a{
+    text-decoration: none;
+    color: white;
 }
