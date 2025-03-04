@@ -476,6 +476,12 @@ header.active {
 }
 
 @media(max-width:600px) {
+
+    .tab-btn{
+font-size: 10px;
+padding: 5px;
+    }
+
     header .brand-logo {
         width: 150px;
     }
@@ -629,7 +635,8 @@ footer ul li a:hover {
 @media(max-width: 600px) {
     .highlights div {
         border: none !important;
-    } 
+    }
+
     .page-link {
         font-size: 12px;
         padding: 5px 15px;
@@ -668,8 +675,8 @@ footer ul li a:hover {
 
 .project-details-tabs {
     position: sticky;
-    top: 130px;
-    z-index: 99;
+    top: 100px;
+    z-index: 9999999;
 }
 
 .project-details-tabs ul {
@@ -810,11 +817,11 @@ footer ul li a:hover {
 }
 
 .project-enquiry form input:focus,
-.project-enquiry form textarea:focus{
+.project-enquiry form textarea:focus {
     outline: none;
 }
 
-.project-enquiry form button{
+.project-enquiry form button {
     background-color: #066682;
     border: none;
     color: white;
@@ -822,10 +829,55 @@ footer ul li a:hover {
     border-radius: 10px;
 }
 
-.project-enquiry form button:active{
+.project-enquiry form button:active {
     scale: 0.95;
 }
-.project-details-tabs ul li a{
+
+.project-details-tabs ul li a {
     text-decoration: none;
     color: white;
+}
+
+.tabs {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.tab-btn {
+    padding: 10px 20px;
+    border: none;
+    background-color: #ddd;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: background 0.3s ease;
+}
+
+
+.tabs-2 .tab-btn {
+    background: transparent;
+    color: #054d63;
+}
+
+.tabs-2 .tab-btn.active{
+    color: #FFEA00;
+    border-bottom: 2px solid #066682;
+    background-color: transparent;
+    border-radius: 0;
+}
+
+.tab-btn.active {
+    background-color: #066682;
+    color: #fff;
+}
+
+.tab-content {
+    display: none;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.tab-content.active {
+    display: block;
 }

@@ -15,6 +15,25 @@ document.onscroll = function () {
 Fancybox.bind("[data-fancybox]", {
   // Your custom options
 });
+document.querySelectorAll(".tabs").forEach(nav => {
+  nav.addEventListener("click", (e) => {
+      if (e.target.classList.contains("tab-btn")) {
+          let tabName = e.target.getAttribute("data-tab");
+
+          // Remove 'active' class from all buttons in both navigations
+          document.querySelectorAll(".tab-btn").forEach(btn => btn.classList.remove("active"));
+
+          // Add 'active' class to the clicked button in both navigations
+          document.querySelectorAll(`.tab-btn[data-tab="${tabName}"]`).forEach(btn => btn.classList.add("active"));
+
+          // Hide all tab content
+          document.querySelectorAll(".tab-content").forEach(content => content.classList.remove("active"));
+
+          // Show the selected tab content
+          document.getElementById(tabName).classList.add("active");
+      }
+  });
+});
 
 const navToggler = document.getElementById("navtoggler");
 const navClose = document.getElementById("close-nav");
@@ -117,7 +136,7 @@ document.addEventListener("DOMContentLoaded", function () {
         slidesPerView: 2,
         spaceBetween: 20,
       },
-      1024: {
+      1025: {
         // Large screens (desktop)
         slidesPerView: 4,
         spaceBetween: 30,

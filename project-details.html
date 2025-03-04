@@ -72,7 +72,7 @@
     <section class="project-details-tabs d-md-block d-none">
         <div class="d-flex justify-content-center">
             <ul class="m-0 p-0">
-                <li class="text-center" >
+                <li class="text-center">
                     <a href="#overview">
                         <img src="./assets/images/project/Vector.png" alt="icon">
                         <p>OVERVIEW</p>
@@ -80,40 +80,40 @@
                     </a>
                 </li>
                 <li class="text-center">
-                    <a href="#gallery">
+                    <a href="#project-gallery">
                         <img src="./assets/images/project/Vector.png" alt="icon">
                         <p>GALLERY</p>
                     </a>
-                   
+
                 </li>
                 <li class="text-center">
-                   <a href="#highlights">
-                    <img src="./assets/images/project/Vector.png" alt="icon">
-                    <p>HIGHLIGHTS</p>
-                   </a>
+                    <a href="#highlights">
+                        <img src="./assets/images/project/Vector.png" alt="icon">
+                        <p>HIGHLIGHTS</p>
+                    </a>
                 </li>
                 <li class="text-center" id="siteplans">
                     <a href="#siteplans">
                         <img src="./assets/images/project/Vector.png" alt="icon">
-                    <p>SITE PLANS</p>
+                        <p>SITE PLANS</p>
                     </a>
                 </li>
                 <li class="text-center" id="unitplans">
                     <a href="#unitplans">
                         <img src="./assets/images/project/Vector.png" alt="icon">
-                    <p>UNIT PLANS</p>
+                        <p>UNIT PLANS</p>
                     </a>
                 </li>
                 <li class="text-center" id="location">
                     <a href="#location">
                         <img src="./assets/images/project/Vector.png" alt="icon">
-                    <p>LOCATION</p>
+                        <p>LOCATION</p>
                     </a>
                 </li>
                 <li class="text-center" id="enquiry">
                     <a href="#enquiry">
                         <img src="./assets/images/project/Vector.png" alt="icon">
-                    <p>ENQUIRY</p>
+                        <p>ENQUIRY</p>
                     </a>
                 </li>
             </ul>
@@ -193,7 +193,7 @@
     <!-- OVERVIEW -->
 
     <!-- GALLERY -->
-    <section class="property-gallery text-center" id="#gallery">
+    <section class="property-gallery text-center" id="project-gallery">
         <h2 class="other-common-heading m-0">
             GALLERY
         </h2>
@@ -366,17 +366,56 @@
     </section>
     <!-- SITE PLAN -->
     <!-- UNIT PLAN -->
-    <section class="site-plan my-5 " id="unitplans">
+    <section class="site-plan my-5" id="unitplans">
         <div class="project__left container ">
             <h2 class="common-heading m-0">
                 UNIT PLAN
             </h2>
-            <h3 class="fw-bold">
-                Our Unit Plan Overview
-            </h3>
-            <div class="border p-4 border-dark rounded-4 text-center my-3">
+            <div class="d-flex flex-lg-row flex-column justify-content-between align-items-center">
+                <h3 class="fw-bold">
+                    Our Unit Plan Overview
+                </h3>
+                <!-- First Navigation Tabs -->
+                <div class="tabs d-flex gap-3 mt-4 justify-content-center" id="nav1">
+                    <button class="tab-btn active" data-tab="3bhk">3BHK</button>
+                    <button class="tab-btn" data-tab="4bhk-study">4 BHK + Study</button>
+                    <button class="tab-btn" data-tab="4bhk">4 BHK</button>
+                    <button class="tab-btn" data-tab="5bhk-duplex">5BHK Duplex</button>
+                </div>
+            </div>
 
-                <img src="./assets/images/project/image 265.png" alt="plan" class="img-fluid ">
+            <!-- Second Navigation Tabs -->
+
+            <div class="position-relative">
+                
+                <!-- Shared Tab Content -->
+                <div class="tab-content active" id="3bhk">
+                    <div class="border p-4 border-dark rounded-4 text-center my-3">
+                        <img src="./assets/images/project/image 265.png" alt="plan" class="img-fluid ">
+                    </div>
+                </div>
+                <div class="tab-content" id="4bhk-study">
+                    <div class="border p-4 border-dark rounded-4 text-center my-3">
+                        <img src="./assets/images/project/image 265.png" alt="plan" class="img-fluid ">
+                    </div>
+                </div>
+                <div class="tab-content" id="4bhk">
+                    <div class="border p-4 border-dark rounded-4 text-center my-3">
+                        <img src="./assets/images/project/image 265.png" alt="plan" class="img-fluid ">
+                    </div>
+                </div>
+                <div class="tab-content" id="5bhk-duplex">
+                    <div class="border p-4 border-dark rounded-4 text-center my-3">
+                        <img src="./assets/images/project/image 265.png" alt="plan" class="img-fluid ">
+                    </div>
+                </div>
+            </div>
+
+            <div class="tabs tabs-2 d-flex justify-content-center" id="nav2">
+                <button class="tab-btn active" data-tab="3bhk">3BHK</button>
+                <button class="tab-btn" data-tab="4bhk-study">4 BHK + Study</button>
+                <button class="tab-btn" data-tab="4bhk">4 BHK</button>
+                <button class="tab-btn" data-tab="5bhk-duplex">5BHK Duplex</button>
             </div>
 
 
@@ -395,17 +434,12 @@
             </h3>
 
             <div class="mapouter py-3 rounded-4">
-                <div class="gmap_canvas"><iframe class="rounded-4" width="100%" height="560" id="gmap_canvas"
+                <div class="gmap_canvas">
+                    <iframe class="rounded-4" width="100%" height="560" id="gmap_canvas"
                         src="https://maps.google.com/maps?q=289%2C+G.T.+Road+%2CBelur+Howrah-711202&t=&z=13&ie=UTF8&iwloc=&output=embed"
                         frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
-
                 </div>
             </div>
-
-
-
-
-
         </div>
     </section>
     <!-- LOCATION MAP -->
@@ -559,7 +593,9 @@
 
     <!-- SCRIPT -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
     <script src="./assets/js/main.js"></script>
 </body>
 
