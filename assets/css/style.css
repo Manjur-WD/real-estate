@@ -161,7 +161,8 @@ header.active {
 .testimonials h3,
 .blogs h3,
 .faq h3,
-.property-gallery h3 {
+.property-gallery h3,
+.blogs-list h3 {
     font-size: clamp(25px, 3.5vw, 100px);
     font-weight: 900;
 }
@@ -210,6 +211,30 @@ header.active {
 .blog-card p,
 .blog-card .date {
     color: #6D6D6D;
+}
+
+.blog-card p{
+    line-clamp: 2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.blog-tag{
+    background-color: #A7E0F0;
+    color: #066682;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.blog-read-more{
+    padding: 10px 30px;
+    border-radius: 10px;
+    border: 1px solid #171717;
+    color: #066682;
+    text-decoration: none;
 }
 
 .blog-list img {
@@ -477,9 +502,9 @@ header.active {
 
 @media(max-width:600px) {
 
-    .tab-btn{
-font-size: 10px;
-padding: 5px;
+    .tab-btn {
+        font-size: 10px;
+        padding: 5px;
     }
 
     header .brand-logo {
@@ -859,7 +884,7 @@ footer ul li a:hover {
     color: #054d63;
 }
 
-.tabs-2 .tab-btn.active{
+.tabs-2 .tab-btn.active {
     color: #FFEA00;
     border-bottom: 2px solid #066682;
     background-color: transparent;
@@ -880,4 +905,19 @@ footer ul li a:hover {
 
 .tab-content.active {
     display: block;
+}
+
+.basic-contact-details p,
+.main-contact-form p {
+    color: #67676F;
+}
+
+.main-contact-form {
+    background-color: #F1F9FF;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.main-contact-form i.location {
+    color: #066682;
 }
