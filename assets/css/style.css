@@ -921,3 +921,84 @@ footer ul li a:hover {
 .main-contact-form i.location {
     color: #066682;
 }
+
+.hiring{
+    background-color: #F1F9FF;
+    padding: 40px;
+    border-radius: 40px;
+}
+
+.hiring h5{
+    font-size: 18px;
+    color: #066682;
+}
+
+.offset-black{
+    height: 75px;
+    background-color: #171717;
+}
+
+.blog-details-feature-img{
+    height: 500px;
+    object-fit: cover;
+}
+
+.blog-social a{
+    text-decoration: none;
+    border: 1px solid #d4d1d1;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.blog-details p{
+    color: #67676F;
+}
+
+.blog-paginate img{
+    width: 100px;
+    aspect-ratio: 1/1;
+    border-radius: 10px;
+}
+
+.blog-paginate h5{
+    color: #066682;
+    margin-bottom: 20px;
+}
+
+.blog-paginate{
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #d4d1d1;
+    border-radius: 10px;
+}
+
+.blog-paginate h4{
+    line-clamp: 2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+@media(max-width: 600px){
+    .blog-paginate{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .blog-paginate img{
+        width: 80px;
+    }
+
+    .blog-details-feature-img{
+        height: 250px;
+    }
+    .offset-black{
+        height: 50px;
+    }
+}
