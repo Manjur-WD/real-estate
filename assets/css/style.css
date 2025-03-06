@@ -105,6 +105,10 @@ header .brand-logo {
     .responsive-height {
         height: 105%;
     }
+    .hero__filter-form{
+        width: 95%;
+        margin: auto;
+    }
 }
 
 
