@@ -17,21 +17,21 @@ Fancybox.bind("[data-fancybox]", {
 });
 document.querySelectorAll(".tabs").forEach(nav => {
   nav.addEventListener("click", (e) => {
-      if (e.target.classList.contains("tab-btn")) {
-          let tabName = e.target.getAttribute("data-tab");
+    if (e.target.classList.contains("tab-btn")) {
+      let tabName = e.target.getAttribute("data-tab");
 
-          // Remove 'active' class from all buttons in both navigations
-          document.querySelectorAll(".tab-btn").forEach(btn => btn.classList.remove("active"));
+      // Remove 'active' class from all buttons in both navigations
+      document.querySelectorAll(".tab-btn").forEach(btn => btn.classList.remove("active"));
 
-          // Add 'active' class to the clicked button in both navigations
-          document.querySelectorAll(`.tab-btn[data-tab="${tabName}"]`).forEach(btn => btn.classList.add("active"));
+      // Add 'active' class to the clicked button in both navigations
+      document.querySelectorAll(`.tab-btn[data-tab="${tabName}"]`).forEach(btn => btn.classList.add("active"));
 
-          // Hide all tab content
-          document.querySelectorAll(".tab-content").forEach(content => content.classList.remove("active"));
+      // Hide all tab content
+      document.querySelectorAll(".tab-content").forEach(content => content.classList.remove("active"));
 
-          // Show the selected tab content
-          document.getElementById(tabName).classList.add("active");
-      }
+      // Show the selected tab content
+      document.getElementById(tabName).classList.add("active");
+    }
   });
 });
 
@@ -192,8 +192,8 @@ document.addEventListener("DOMContentLoaded", function () {
     sections.forEach((section, index) => {
       if (scrollPosition >= section.offsetTop - 100 &&
         scrollPosition < section.offsetTop + section.offsetHeight - 100) {
-        navLinks.forEach((link) => link.classList.remove("active"));
-        navLinks[index].classList.add("active");
+        navLinks.forEach((link) => link?.classList.remove("active"));
+        navLinks[index]?.classList.add("active");
       }
     });
   }
@@ -201,3 +201,27 @@ document.addEventListener("DOMContentLoaded", function () {
   window.addEventListener("scroll", highlightNav);
   highlightNav(); // Call once to set the active link on page load
 });
+
+// about us tabs
+
+document.addEventListener("DOMContentLoaded", () => {
+  const tabs = document.querySelectorAll(".tab");
+  const tabContents = document.querySelectorAll(".tab-content");
+
+  function activateTab(index) {
+    tabs.forEach(tab => tab.classList.remove("active"));
+    tabContents.forEach(content => content.classList.remove("active"));
+
+    tabs[index].classList.add("active");
+    tabContents[index].classList.add("active");
+  }
+
+  tabs.forEach((tab, index) => {
+    tab.addEventListener("click", () => activateTab(index));
+  });
+
+  activateTab(0);
+});
+
+
+

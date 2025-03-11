@@ -310,6 +310,7 @@ header.active {
     .subheading {
         width: 50%;
     }
+    
 }
 
 .exp-years {
@@ -321,12 +322,19 @@ header.active {
     border: 3px solid white;
 }
 
+.about-us-2 .exp-years {
+    right: -30px !important;
+    left: auto !important;
+    bottom: 100px !important;
+}
+
 .common-heading,
 .banner-title,
 .other-common-heading {
     font-size: 16px;
     position: relative;
     padding: 20px 0;
+    text-transform: uppercase;
 }
 
 .common-heading::after,
@@ -678,6 +686,9 @@ footer ul li a:hover {
     .breadcrumb-custom p {
         width: 100%;
     }
+    .about-us-2 .exp-years {
+        right: 0px !important;
+    }
 }
 
 .accordion-button {
@@ -989,20 +1000,76 @@ footer ul li a:hover {
     -webkit-box-orient: vertical;
 }
 
+.tabs-about{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.tabs-about .tab{
+    border: 1px solid #171717;
+    padding: 10px 20px;
+    border-radius: 10px;
+    width: 150px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.tabs-about .tab.active,.tabs-about .tab:hover{
+    background-color: #066682;
+    color: white;
+    border-color: #066682;
+}
+
+
+
+.tab-mission-vission .tabs-content {
+    margin-top: 15px;
+}
+
+.tab-mission-vission .tab-content {
+    display: none;
+}
+
+.tab-mission-vission .tab-content.active {
+    display: block;
+}
+
+.tab-mission-vission .leaders p{
+    color: #67676F;
+}
+
+.leader-head p{
+    width: 30%;
+}
+
+.leader-image{
+    width: 50%;
+    aspect-ratio: 1/1;
+    object-position: top;
+    object-fit: cover;
+}
+
 @media(max-width: 600px){
+
+    .leader-image{
+        width: 100%;
+    }
+    .leader-head p{
+        width: 100%;
+    }
     .blog-paginate{
         width: 100%;
         flex-direction: column;
     }
-
     .blog-paginate img{
         width: 80px;
     }
-
     .blog-details-feature-img{
         height: 250px;
     }
     .offset-black{
         height: 50px;
     }
+    
 }
