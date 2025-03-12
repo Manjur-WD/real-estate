@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Estate</title>
+
+    <!-- GOOGLE FONT LINK -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- REMIX ICON CDN LINK -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+
+    <!-- CSS LINK -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+
+    <!-- SWIPER SLIDER LINK -->
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body class="font-outfit">
+    <!-- HEADER -->
+    <header class="position-fixed top-0 w-100" id="header">
+        <div class="container  d-flex justify-content-between align-items-center px-xl-0 px-4">
+            <a href="index.html"><img src="./assets/images/logo-veidheek.png" alt="logo-img" class="brand-logo"></a>
+            <nav class="nav d-flex align-items-center">
+                <ul class="nav__list m-0 d-flex align-items-center gap-4 text-uppercase text-white font-light me-4 list-unstyled"
+                    id="nav-list">
+                    <li class="nav__list--link"><a href="about.html">About us</a></li>
+                    <li class="nav__list--link"><a href="projects.html">Projects</a></li>
+                    <li class="nav__list--link"><a href="#">Businesses</a></li>
+                    <li class="nav__list--link"><a href="career.html">Career</a></li>
+                    <li class="nav__list--link"><a href="blogs.html">Blogs</a></li>
+                    <li class="nav__list--link"><a href="contact.html">Contact Us</a></li>
+                    <li class="nav__list--link d-xl-none position-absolute" id="close-nav">
+                        <button class="border-0 bg-transparent text-white"><i class="ri-arrow-left-line"></i></button>
+                    </li>
+                </ul>
+                <a href="#"
+                    class="call-btn text-decoration-none d-sm-block d-none common-btn bg-darkblue text-white md:text-lg text-sm"><i
+                        class="ri-phone-fill"></i>91 12345
+                    986</a>
+                <button type="button" id="navtoggler" class="nav__btn d-xl-none"><i
+                        class="ri-menu-fold-line"></i></button>
+            </nav>
+        </div>
+    </header>
+    <!-- HEADER -->
+    <main>
+        <section class="breadcrumb-custom d-flex justify-content-center align-items-center">
+            <div class="container d-flex flex-column align-items-center mt-lg-0 mt-5">
+                <div class="text-center py-5 text-white">
+                    <h2 class="fw-bold">Our Esteemed Projects</h2>
+                    <p>Login offers manufacturers and logisticians Of all sizes tailor-made support to
+                        analyze. recommend and transform their logistics organization.
+                    </p>
+                </div>
+                <div class="hero__filter-form bg-white rounded-md-pill rounded-5 mb-5 w-100">
+                    <form action="#" class="d-flex flex-column flex-md-row align-items-center  gap-md-0 px-2 py-2">
+                        <div class="form-group w-100 border-md-end border-secondary-subtle ps-md-3">
+                            <label for="location" class="px-2">Location</label>
+                            <select id="location"
+                                class="form-select text-secondary text-opacity-75 text-small border-0 p-1 w-100 shadow-none">
+                                <option value="">Select Property Location</option>
+                                <option value="">2</option>
+                                <option value="">3</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group w-100 border-md-end border-secondary-subtle px-lg-2">
+                            <label for="type" class="px-2">Type</label>
+                            <select id="type"
+                                class="form-select text-secondary text-opacity-75 text-small border-0 p-1 w-100 shadow-none">
+                                <option value="">Select Property Type</option>
+                                <option value="">2</option>
+                                <option value="">3</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group w-100 border-md-end border-secondary-subtle px-lg-2">
+                            <label for="property" class="px-2">Status</label>
+                            <select id="property"
+                                class="form-select text-secondary text-opacity-75 text-small border-0 p-1 w-100 shadow-none">
+                                <option value="">Select Property Status</option>
+                                <option value="">2</option>
+                                <option value="">3</option>
+                            </select>
+                        </div>
+                        <div class="form-group w-100 border-md-end border-secondary-subtle px-lg-2">
+                            <label for="property" class="px-2">Budget</label>
+                            <select id="property"
+                                class="form-select text-secondary text-opacity-75 text-small border-0 p-1 w-100 shadow-none">
+                                <option value="">Select Budget</option>
+                                <option value="">2</option>
+                                <option value="">3</option>
+                            </select>
+                        </div>
+
+                        <button type="submit"
+                            class="search-btn btn btn-primary rounded-pill h-100 px-3 py-md-4 py-2 w-100 w-md-auto ms-md-5 mt-md-0 mt-3">
+                            Reset
+                        </button>
+
+                    </form>
+
+                </div>
+            </div>
+        </section>
+        <section class="projects-list">
+            <div class="project-select-category my-4 d-flex flex-wrap gap-2 justify-content-center">
+                <a href="ongoing-project.html" class="active">Ongoing</a>
+                <a href="projects.html">Past</a>
+            </div>
+            <div class="container px-lg-0 p-2">
+                <div class="project-slide row align-items-center mx-2 my-4">
+                    <div class="col-xl-8 col-lg-6 position-relative">
+                        <img src="./assets/images/property image.png" alt="property-image" class="property-image">
+                        <h3 class="project-price d-inline-block position-absolute"><span class="fw-light">Starting
+                                From</span><span class="fw-semibold ms-2 fs-lg-1 fs-3 price">₹ 78.05 Lakh</span></h3>
+                        <span class="project-tag">Ongoing</span>
+                    </div>
+                    <div class="col-xl-4 col-lg-6">
+                        <div class="p-lg-4 px-2 pb-5 project-slide-content">
+                            <div class="d-flex mb-1 flex-lg-row size-type justify-content-between mb-2">
+                                <div class="text-secondary ">
+                                    <span class="text-uppercase fs-6 border-end px-1">2bhk</span>
+                                    <span class="text-uppercase fs-6 border-end px-1">3bhk</span>
+                                    <span class="text-uppercase fs-6 border-end px-1">4bhk</span>
+                                </div>
+                                <p>1200 sq. ft.</p>
+                            </div>
+                            <h2 class="text-4xl font-semibold mb-2">Business Bay</h2>
+                            <p><i class="ri-map-pin-2-fill me-2 text-danger"></i>New Town
+                                Akhanksha Crossing</p>
+                            <div class="gradient-divider my-3"></div>
+                            <p>Vaidheeki is an Indian property group with a
+                                clearly
+                                defined
+                                purpose to reimagine urban life. By creating beautiful homes, inspiring
+                                workplace
+                                precincts and thriving shopping centers, we aim to make a positive
+                                contribution
+                                to our
+                                cities and communities.</p>
+                            <div class="d-flex align-items-center flex-md-row flex-column gap-3 mt-5">
+                                <a href="project-details.html"
+                                    class="common-btn bg-darkbluegreen text-white  text-sm text-nowrap">Explore
+                                    More</a>
+                                <a href="#" class="prop-call-btn text-decoration-none text-nowrap"><i
+                                        class="ri-phone-fill"></i>91 12345986</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-slide row align-items-center mx-2 my-4">
+                    <div class="col-xl-8 col-lg-6 position-relative">
+                        <img src="./assets/images/property image.png" alt="property-image" class="property-image">
+                        <h3 class="project-price d-inline-block position-absolute"><span class="fw-light">Starting
+                                From</span><span class="fw-semibold ms-2 fs-lg-1 fs-3 price">₹ 78.05 Lakh</span></h3>
+                        <span class="project-tag">Ongoing</span>
+                    </div>
+                    <div class="col-xl-4 col-lg-6">
+                        <div class="p-lg-4 px-2 pb-5 project-slide-content">
+                            <div class="d-flex mb-1 flex-lg-row size-type justify-content-between mb-2">
+                                <div class="text-secondary ">
+                                    <span class="text-uppercase fs-6 border-end px-1">2bhk</span>
+                                    <span class="text-uppercase fs-6 border-end px-1">3bhk</span>
+                                    <span class="text-uppercase fs-6 border-end px-1">4bhk</span>
+                                </div>
+                                <p>1200 sq. ft.</p>
+                            </div>
+                            <h2 class="text-4xl font-semibold mb-2">Business Bay</h2>
+                            <p><i class="ri-map-pin-2-fill me-2 text-danger"></i>New Town
+                                Akhanksha Crossing</p>
+                            <div class="gradient-divider my-3"></div>
+                            <p>Vaidheeki is an Indian property group with a
+                                clearly
+                                defined
+                                purpose to reimagine urban life. By creating beautiful homes, inspiring
+                                workplace
+                                precincts and thriving shopping centers, we aim to make a positive
+                                contribution
+                                to our
+                                cities and communities.</p>
+                            <div class="d-flex align-items-center flex-md-row flex-column gap-3 mt-5">
+                                <a href="project-details.html"
+                                    class="common-btn bg-darkbluegreen text-white  text-sm text-nowrap">Explore More</a>
+                                <a href="#" class="prop-call-btn text-decoration-none text-nowrap"><i
+                                        class="ri-phone-fill"></i>91 12345986</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="project-pagination d-flex justify-content-center my-3 p-3">
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination m-0 d-flex flex-wrap justify-content-center gap-2">
+                        <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Previous">
+                                <i class="ri-arrow-left-s-line"></i>
+                            </a>
+                        </li>
+                        <li class="page-item"><a class="page-link " href="#">1</a></li>
+                        <li class="page-item"><a class="page-link active" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item"><a class="page-link" href="#">4</a></li>
+                        <li class="page-item"><a class="page-link" href="#">...</a></li>
+                        <li class="page-item"><a class="page-link" href="#">6</a></li>
+                        <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Next">
+                                <i class="ri-arrow-right-s-line"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div> -->
+
+        </section>
+
+    </main>
+    <!-- FOOTER SECTION -->
+    <footer class="bg-black text-white py-10">
+        <div class="container mx-auto p-5">
+            <div class="row">
+                <!-- Company Info -->
+                <div class="col-md-3">
+                    <div class="text-2xl mb-3 font-semibold tracking-wider d-flex align-items-center">
+                        <img src="./assets/images/logo-veidheek.png" alt="logo">
+                    </div>
+                    <p>
+                        Bruchim Haba’im to Ramat Beit Shemesh! Lemkin Realty is the premier realty firm in the Beit
+                        Shemesh region.
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-md-3">
+                    <h3 class="text-lg font-semibold mb-4 fs-5">QUICK LINKS</h3>
+                    <ul class="space-y-2 text-gray-400 list-unstyled">
+                        <li><a href="#" class="hover:text-white">Buy a Home</a></li>
+                        <li><a href="#" class="hover:text-white">Rent a Home</a></li>
+                        <li><a href="#" class="hover:text-white">Commercial</a></li>
+                        <li><a href="#" class="hover:text-white">Property Management</a></li>
+                        <li><a href="#" class="hover:text-white">New Projects</a></li>
+                    </ul>
+                </div>
+
+                <!-- Company -->
+                <div class="col-md-3">
+                    <h3 class="text-lg font-semibold mb-4 fs-5">COMPANY</h3>
+                    <ul class="space-y-2 text-gray-400 list-unstyled">
+                        <li><a href="#" class="hover:text-white">About Us</a></li>
+                        <li><a href="#" class="hover:text-white">Contact Us</a></li>
+                        <li><a href="#" class="hover:text-white">Blogs</a></li>
+                    </ul>
+                </div>
+
+                <!-- Newsletter -->
+                <div class="col-md-3">
+                    <h3 class="text-lg font-semibold mb-4 fs-5">STAY UPDATED WITH OUR NEWSLETTER</h3>
+                    <div class="position-relative newsletter-form">
+                        <input type="email" placeholder="Enter your email"
+                            class="w-100 px-4 py-2 rounded-pill bg-white">
+                        <button class="position-absolute text-info transform -translate-y-1/2 text-blue-400">
+                            <i class="ri-send-plane-fill"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Divider -->
+        <div class="border-top"></div>
+        <div class="follow  d-flex gap-lg-5 gap-3 flex-wrap justify-content-center align-items-center space-x-6 my-4">
+            <p>FOLLOW US ON</p>
+            <a href="#" class="hover:text-white"><i class="ri-facebook-circle-line"></i> Facebook</a>
+            <a href="#" class="hover:text-white"><i class="ri-pinterest-line"></i> Pinterest</a>
+            <a href="#" class="hover:text-white"><i class="ri-instagram-line"></i> Instagram</a>
+            <a href="#" class="hover:text-white"><i class="ri-twitter-x-line"></i> Twitter</a>
+            <a href="#" class="hover:text-white"><i class="ri-youtube-line"></i> YouTube</a>
+        </div>
+        <div class="border-top border-gray-800 my-6"></div>
+        <!-- Social & Legal -->
+        <div
+            class="copyright p-3  container mx-auto d-flex  flex-md-row flex-column gap-lg-0  gap-5 justify-content-between align-items-center">
+            <div class="d-flex gap-2">
+                <a href="#" class="text-decoration-none text-white">Terms & Conditions</a>
+                <span>•</span>
+                <a href="#" class="text-decoration-none text-white">Privacy Policy</a>
+            </div>
+            <p>© 2025 REAL ESTATE</p>
+
+        </div>
+    </footer>
+
+    <!-- SCRIPT -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
