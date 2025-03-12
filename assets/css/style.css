@@ -12,6 +12,10 @@ html {
     scroll-behavior: smooth;
 }
 
+section {
+    scroll-margin-top: 150px;
+}
+
 .font-dmsans {
     font-family: "DM Sans", serif;
 }
@@ -643,7 +647,7 @@ footer ul li a:hover {
 
 .project-slide-content .size-type p {
     color: #066682;
-    font-size: clamp(16px , 1.8vw , 25px);
+    font-size: clamp(16px, 1.8vw, 25px);
     line-height: 1;
     font-weight: 300;
 }
@@ -755,11 +759,12 @@ footer ul li a:hover {
 
 .project-details-tabs {
     position: sticky;
-    top: 80px;
+    top: 120px;
     z-index: 9999999;
 }
 
 .project-details-tabs ul {
+    width: 80%;
     background-color: #066682;
     list-style-type: none;
     display: flex;
@@ -770,9 +775,47 @@ footer ul li a:hover {
     border-radius: 50px;
     position: relative;
     top: -50px;
-    overflow: hidden;
     box-shadow: 0 0 5px grey;
     border: 4px solid white;
+}
+
+.specifications i {
+    color: #066682;
+    font-size: 22px;
+}
+
+
+.prev-tab,
+.next-tab {
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    aspect-ratio: 1/1;
+}
+
+.prev-tab {
+    position: absolute;
+    left: 10px;
+}
+
+.next-tab {
+    position: absolute;
+    right: 10px;
+}
+
+.brochure-download {
+    min-height: 250px;
+    background: linear-gradient(#066582c6, #e5e5e576), url(../images/project/blg-2.png) no-repeat center/cover;
+    background-attachment: fixed;
+    border-radius: 40px;
+    padding: 20px;
+}
+
+.brochure {
+    background: #171717;
+    color: white;
+    padding: 10px 20px;
+    border: 2px solid white;
 }
 
 .project-details-tabs ul li {
@@ -959,7 +1002,7 @@ footer ul li a:hover {
 }
 
 .tab-content.active {
-    display: block;
+    display: block !important;
 }
 
 .basic-contact-details p,
@@ -1080,9 +1123,76 @@ footer ul li a:hover {
     color: #67676F;
 }
 
+.leader:nth-child(even) .project-slide {
+    background: linear-gradient(#e5e5e5cb, #E5E5E5), url(../images/about-1.png) no-repeat left/contain;
+}
+
+.leader:nth-child(odd) .project-slide {
+    background: linear-gradient(#e5e5e5ce, #E5E5E5), url(../images/about-1.png) no-repeat right/contain;
+}
+
 .leader-head p {
     width: 30%;
 }
+
+.timeline-card {
+    border: none;
+    position: relative;
+}
+
+.timeline-sub-card {
+    background: #F1F9FF;
+    padding: 20px;
+    position: relative;
+}
+
+.timeline-card p {
+    color: #67676F;
+}
+
+.timeline-card h4::before {
+    content: "";
+    width: 40px;
+    height: 2px;
+    background-color: #171717;
+    display: block;
+    margin-bottom: 10px;
+
+}
+
+.timeline-card h4::after {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: #066682;
+    border-radius: 50%;
+    display: block;
+    margin-bottom: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.timeline-card {
+    position: relative;
+}
+
+.timeline-sub-card {
+    position: relative;
+}
+.timeline::before {
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: #066682;
+    display: block;
+    position: absolute;
+    top:61px;
+    left: 50%;
+    z-index: 9999;
+    transform: translateX(-50%);
+}
+
 
 .leader-image {
     width: 50%;
@@ -1118,4 +1228,8 @@ footer ul li a:hover {
         height: 50px;
     }
 
+}
+
+.timeline-card h3 {
+    color: #066682;
 }

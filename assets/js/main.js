@@ -148,6 +148,117 @@ document.addEventListener("DOMContentLoaded", function () {
       },
     },
   });
+  var swiper5 = new Swiper(".tab-option-slider", {
+    loop: true, // Infinite loop
+    // autoplay: {
+    //   delay: 3000, // Auto-slide every 3s
+    //   disableOnInteraction: false,
+    // },
+    navigation: {
+      nextEl: ".next-tab",
+      prevEl: ".prev-tab",
+    },
+    pagination: {
+      el: ".swiper-pagination-2",
+      clickable: true,
+    },
+    breakpoints: {
+      320: {
+        // Small screens (mobile)
+        slidesPerView: 2,
+        spaceBetween: 10,
+      },
+      768: {
+        // Medium screens (tablet)
+        slidesPerView: 4,
+        spaceBetween: 20,
+      },
+      1024: {
+        // Large screens (desktop)
+        slidesPerView: 8,
+        spaceBetween: 30,
+      },
+      2000: {
+        // Large screens (desktop)
+        slidesPerView: 8,
+        spaceBetween: 30,
+      },
+    },
+  });
+  var swiper6 = new Swiper(".construction-slider", {
+    loop: true, // Infinite loop
+    autoplay: {
+      delay: 3000, // Auto-slide every 3s
+      disableOnInteraction: false,
+    },
+    navigation: {
+      nextEl: ".next-tab",
+      prevEl: ".prev-tab",
+    },
+    pagination: {
+      el: ".swiper-pagination-2",
+      clickable: true,
+    },
+    breakpoints: {
+      320: {
+        // Small screens (mobile)
+        slidesPerView: 1,
+        spaceBetween: 10,
+      },
+      768: {
+        // Medium screens (tablet)
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+      1024: {
+        // Large screens (desktop)
+        slidesPerView: 4,
+        spaceBetween: 30,
+      },
+      2000: {
+        // Large screens (desktop)
+        slidesPerView: 4,
+        spaceBetween: 30,
+      },
+    },
+  });
+  var swiper7 = new Swiper(".timeline-slider", {
+    loop: true, // Infinite loop
+    autoplay: {
+      delay: 3000, // Auto-slide every 3s
+      disableOnInteraction: false,
+    },
+    navigation: {
+      nextEl: ".next-tab",
+      prevEl: ".prev-tab",
+    },
+    pagination: {
+      el: ".swiper-pagination-2",
+      clickable: true,
+    },
+    breakpoints: {
+      320: {
+        // Small screens (mobile)
+        slidesPerView: 1,
+        spaceBetween: 10,
+      },
+      768: {
+        // Medium screens (tablet)
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+      1024: {
+        // Large screens (desktop)
+        slidesPerView: 3,
+        spaceBetween: 30,
+      },
+      2000: {
+        // Large screens (desktop)
+        slidesPerView: 3,
+        spaceBetween: 30,
+      },
+    },
+  });
 });
 
 // JavaScript for Accordion (Only One Open at a Time)
@@ -212,8 +323,8 @@ document.addEventListener("DOMContentLoaded", () => {
     tabs.forEach(tab => tab.classList.remove("active"));
     tabContents.forEach(content => content.classList.remove("active"));
 
-    tabs[index].classList.add("active");
-    tabContents[index].classList.add("active");
+    tabs[index]?.classList.add("active");
+    tabContents[index]?.classList.add("active");
   }
 
   tabs.forEach((tab, index) => {
