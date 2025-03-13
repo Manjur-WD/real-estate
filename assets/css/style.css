@@ -1180,6 +1180,7 @@ footer ul li a:hover {
 .timeline-sub-card {
     position: relative;
 }
+
 .timeline::before {
     content: "";
     width: 100%;
@@ -1187,12 +1188,11 @@ footer ul li a:hover {
     background-color: #066682;
     display: block;
     position: absolute;
-    top:61px;
+    top: 61px;
     left: 50%;
     z-index: 9999;
     transform: translateX(-50%);
 }
-
 
 .leader-image {
     width: 50%;
