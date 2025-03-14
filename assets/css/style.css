@@ -8,6 +8,8 @@
     --color-darkblue: #196EB2;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap');
+
 html {
     scroll-behavior: smooth;
 }
@@ -1199,6 +1201,104 @@ footer ul li a:hover {
     aspect-ratio: 1/1;
     object-position: top;
     object-fit: cover;
+}
+
+.hero-huckleberry,
+.contact-huckleberry {
+    position: relative;
+    background: url(../images/huckleberry/background.jpg) no-repeat center/cover;
+    background-attachment: fixed;
+    padding-top: 80px;
+}
+
+.contact-huckleberry h2 {
+    font-weight: 900;
+    font-size: clamp(25px, 5vw, 80px);
+    color: white;
+    padding-top: 30px;
+}
+
+.contact-huckleberry p {
+    color: white;
+}
+
+.faq-huckleberry {
+    background-color: #1d4466;
+}
+
+.huckleberry-product {
+    background: linear-gradient(#48A6FF, #48a7ffb1), url(../images/huckleberry/hero-2.webp) no-repeat center/cover;
+}
+
+.huckleberry-product h2,
+.faq-huckleberry h2 {
+    font-weight: 900;
+    font-size: clamp(25px, 5vw, 80px);
+    color: white;
+    padding-top: 30px;
+}
+
+.huckleberry-about h2 {
+    font-weight: 900;
+    font-size: clamp(25px, 5vw, 80px);
+    color: rgb(0, 0, 0);
+    padding-top: 30px;
+}
+
+.socials-huckleberry a {
+    border: 1px solid white;
+    font-size: 15px;
+    padding: 5px 10px;
+    display: inline-block;
+    border-radius: 50%;
+    margin-right: 5px;
+    transition: all 0.3s ease;
+}
+
+.socials-huckleberry a:hover {
+    background-color: white;
+    color: #1d4466 !important;
+    scale: 1.1;
+}
+
+.faq-huckleberry h2 .huckleberry-can {
+    rotate: 90deg;
+}
+
+.learn-more-huckleberry {
+    box-shadow: 5px 5px 0 white;
+    transition: all 0.3s ease;
+}
+
+.learn-more-huckleberry:hover {
+    scale: 0.9;
+    background: #12C9FF !important;
+    box-shadow: 5px 5px 0 #000000;
+}
+
+.hero-huckleberry-slider h1 {
+    font-size: clamp(25px, 5vw, 120px);
+    font-weight: 900;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.hero-huckleberry-slider img {
+    border-radius: 50px;
+}
+
+.hero-prev,
+.hero-next {
+    width: 30%;
+}
+
+.hero-prev img {
+    filter: invert(50%) sepia(100%) saturate(500%) hue-rotate(180deg);
+}
+
+.hero-next img {
+    rotate: 180deg;
+    filter: invert(50%) sepia(100%) saturate(500%) hue-rotate(180deg);
 }
 
 @media(max-width: 600px) {
